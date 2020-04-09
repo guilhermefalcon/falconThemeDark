@@ -1,5 +1,5 @@
 # Falcon Template for Blogger
-Vou manter neste repositório, todos os exercícios e projetos interessantes que eu for fazendo durante o aprendizado de JS.
+Template blogger rápido, leve, responsivo, não distorce no celular, deu trabalho pra fazer, e você pode usar gratuitamente. Tem slide, posts em galeria, pesquisa no blog, enfim... pode testar. Porém ele é na cor dark, o que facilita a leitura noturna. Deixe alguma reação, caso possa te ajudar. Obrigado!
 ### Download
 * To download the _.xml_ file, [click here](https://github.com/gsfalcon/falconThemeDark/archive/master.zip).
 ### falconThemeDark
