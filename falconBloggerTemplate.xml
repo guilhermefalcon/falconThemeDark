@@ -4,16 +4,18 @@
 
 <head>
 
-<!-- [ gtag.js - Google Analytics ] -->
-<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-1'/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X'/>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
 
-  gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-1&#39;);
+  gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
 </script>
-
+  
+<script async='async' data-ad-client='ca-pub-5291850394545060' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+  
 <!-- [ Color selector to mobile devices headers ] -->
     <meta content='#181A1B' name='theme-color'/>
     <meta content='#181A1B' name='msapplication-navbutton-color'/>
@@ -39,7 +41,7 @@
 <title><data:blog.pageTitle/></title>
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-<title><data:blog.pageName/> - <data:blog.title/></title>
+<title><data:blog.pageName/> &#9642;&#9642;&#9642; <data:blog.title/></title>
 </b:if></b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
 <title>ERRO 404 - Página não encontrada | <data:blog.title/></title>
@@ -94,13 +96,13 @@
 <b:if cond='data:blog.postImageThumbnailUrl'>
 <meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
 <b:else/>
-<meta content='https://4.bp.blogspot.com/-bMYuUITAwHM/WZQxJZDcOfI/AAAAAAAASBE/O2xFDljeqQU9wdekcqYATUYn3EcPuttQwCPcBGAYYCw/s9600/Brick.png' property='og:image'/>
+<meta content='https://www.placecage.com/gif/200/300' property='og:image'/>
 </b:if>
 </b:if>
   <meta content='pt_BR' property='og:locale'/>
-  <meta content='https://tijolada-virtual.blogspot.com/' property='og:url'/>
+  <meta content='https://www.tijolada.com/' property='og:url'/>
 <b:if cond='data:blog.homepageUrl == data:blog.url'>
-  <meta content='Downloads seguros e discretos' property='og:description'/>
+  <meta content='Up and Running' property='og:description'/>
 </b:if>
   <meta content='website' property='og:type'/>
   <meta content='image/jpeg' property='og:image:type'/>
@@ -117,7 +119,7 @@
 ===============================
 FALCON TEMPLATE BLOGGER | v1.0
           B R A Z I L 
-      github.com/gsfalcon
+  github.com/guilhermefalcon
 ===============================
 ===============================
 ===============================
@@ -354,14 +356,14 @@ body {
 }
 
 ::-moz-selection {
-  color: #EAECEE;
+  color: #181A1B;
   background-color: sandybrown;
   text-shadow: none;
 }
 
 ::selection {
   background-color: sandybrown;
-  color: #EAECEE;
+  color: #181A1B;
   text-shadow: none;
 }
 
@@ -378,12 +380,12 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
-background-color: red;
+  background-color: red;
 }
 
 textarea {
   resize: vertical;
-background-color: red;
+  background-color: red;
 }
 
 .chromeframe {
@@ -533,8 +535,7 @@ h3:hover {
 }
 
 .post-body {
-z-index: 9999;
-
+  z-index: 9999;
   width: 100%;
   background-color: transparent;
   text-align: left;
@@ -577,20 +578,65 @@ z-index: 9999;
   border-left: 1px solid #aaa;
 }
 
+#Image1 img {
+  padding: 0;
+  margin-top: -23px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  float: center;
+}
 
+#Image2 img {
+  padding: 0;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  float: center;
+}
 
+#Image3 img {
+  padding: 0;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  float: center;
+}
 
+#Image4 img {
+  padding: 0;
+  margin-top: -16px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  float: center;
+}
 
-
-
-
-
-
-
-
-
-
-
+#Image5 img {
+  padding: 0;
+  margin-top: -16px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  float: center;
+}
 
 #b-navbar,#navbar {
   display: none;
@@ -620,7 +666,7 @@ img {
 }
 
 .blog-feeds,.feed-links {
-color: red;
+  color: red;
 }
 
 code,pre {
@@ -628,7 +674,6 @@ code,pre {
 }
 
 .right_rail {
-
   font-size: .8em;
   margin: 50px 0 0;
 }
@@ -698,8 +743,8 @@ footer {
 #Label1 {
   margin: 0;
   padding: 0;
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 20px;
+  font-size: 18px;
   word-wrap: break-word;
 }
 
@@ -708,9 +753,9 @@ footer {
   margin: 0 5px 5px 0;
   display: block;
   float: left;
-  color: #181A1B;
-  background-color: sandybrown;
-  font-size: 14px;
+  color: #EAECEE;
+  background-color: transparent;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -719,7 +764,7 @@ footer {
   float: left;
   color: sandybrown;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   padding: 5px 7px;
   margin: 0 5px 5px 0;
@@ -727,15 +772,15 @@ footer {
 }
 
 #Label1 a:hover {
-  color: #181A1B;
-  background-color: sienna;
-  font-size: 14px;
+  color: sandybrown;
+  background-color: #181A1B;
+  font-size: 18px;
 }
 
 #Label1 a:active {
-  color: #EAECEE;
+  color: sandybrown;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #HTML3 {
@@ -763,6 +808,26 @@ footer {
   display: inline;
   font-weight: 700;
   text-decoration: none;
+}
+
+#HTML4 img {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  float: left;
+  margin-top: -20px;
+}
+
+#HTML5 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  float: left;
+  margin-top: -20px;
 }
 
 #PageList1 {
@@ -806,15 +871,29 @@ footer {
 
 #BlogArchive1 {
   background-color: transparent;
+  color: #F6F8F6;
   margin: auto;
   padding: 0;
   width: 100%;
   height: auto;
-  font-size: 19px;
+  font-size: 20px;
   float: left;
   text-align: left;
-margin-bottom: 40px;
-z-index: 9999;
+  margin-bottom: 40px;
+  z-index: 9999;
+  text-decoration: uppercase;
+}
+
+#BlogArchive1 a {
+  padding-left: 30px;
+  background-color: transparent;
+  text-decoration: uppercase;
+}
+
+#BlogArchive1 a:hover {
+  background-color: transparent;
+  color: sandybrown;
+  text-decoration: underline;
 }
 
 #PopularPosts1 ul li a {
@@ -860,50 +939,102 @@ z-index: 9999;
 
 #PopularPosts1 ul li:nth-child(6n+6) a {
   color: #181A1B;
-  background-color: #4da6ff;
+  background-color: #4dffaf;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#PopularPosts1 ul li:nth-child(6n+7) a {
+  color: #181A1B;
+  background-color: #4dffde;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#PopularPosts1 ul li:nth-child(6n+8) a {
+  color: #181A1B;
+  background-color: #4ddeff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#PopularPosts1 ul li:nth-child(6n+9) a {
+  color: #181A1B;
+  background-color: #4dbeff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#PopularPosts1 ul li:nth-child(6n+10) a {
+  color: #181A1B;
+  background-color: #4da9ff;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
 }
 
 #PopularPosts1 ul li:nth-child(6n+1) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #PopularPosts1 ul li:nth-child(6n+2) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #PopularPosts1 ul li:nth-child(6n+3) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #PopularPosts1 ul li:nth-child(6n+4) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #PopularPosts1 ul li:nth-child(6n+5) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #PopularPosts1 ul li:nth-child(6n+6) a:hover {
-  color: #EAECEE;
-  background-color: transparent;
+  color: sandybrown;
+  background-color: #181A1B;
   text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+#PopularPosts1 ul li:nth-child(6n+7) a:hover {
+  color: sandybrown;
+  background-color: #181A1B;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  text-decoration: none;
+}
+
+#PopularPosts1 ul li:nth-child(6n+8) a:hover {
+  color: sandybrown;
+  background-color: #181A1B;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  text-decoration: none;
+}
+
+#PopularPosts1 ul li:nth-child(6n+9) a:hover {
+  color: sandybrown;
+  background-color: #181A1B;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  text-decoration: none;
+}
+
+#PopularPosts1 ul li:nth-child(6n+10) a:hover {
+  color: sandybrown;
+  background-color: #181A1B;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+  text-decoration: none;
 }
 
 .relpost {
@@ -928,8 +1059,8 @@ z-index: 9999;
 }
 
 .relpost a:hover {
-  background-color: transparent;
-  color: sienna;
+  background-color: #181A1B;
+  color: sandybrown;
   line-height: 1;
   width: 98%;
   list-style-type: square;
@@ -939,17 +1070,15 @@ z-index: 9999;
   text-transform: uppercase;
 }
 
-.youtube-ifttt img{
-display: block;
-float: left;
-margin: 0;
-padding: 0;
-width: 100%;
-height: auto;
-display: none;
-
+.youtube-ifttt img {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: none;
 }
-
 
 .youtube-ifttt {
   position: relative;
@@ -966,35 +1095,21 @@ display: none;
   top: 0;
   left: 0;
   max-width: 100%;
-width: 100%;
+  width: 100%;
   max-height: 100%;
-height: 700px;
+  height: 700px;
   vertical-align: bottom;
-float: left;
+  float: left;
 }
-
-
 
 .youtube-ifttt a {
-
-
 }
-
-
-
 
 .youtube-ifttt p {
-color: red;
-margin: 0;
-padding: 0;
-
-
+  color: red;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-
-
 
 .ad-post {
   display: inline-block;
@@ -1035,12 +1150,12 @@ padding: 0;
   width: 98%;
   height: auto;
   background-color: transparent;
- margin-top: -10px;
+  margin-top: -10px;
 }
 
 .marcadora {
-  color: sienna;
-  text-shadow: 1px 1px 2px rgba(0,0,0,1.0);
+  color: #333;
+  text-shadow: 1px 1px 1px gainsboro;
 }
 
 .fix-calendar {
@@ -1056,6 +1171,11 @@ padding: 0;
   padding: 3px;
   margin: 0;
   list-style-type: square;
+  margin-top: -20px;
+}
+
+#Feed1 ul {
+  list-style: none;
 }
 
 #Feed1 a {
@@ -1071,8 +1191,9 @@ padding: 0;
 }
 
 #Feed1 a:hover {
-  background-color: #181A1B;
-  color: sienna;
+  text-decoration: underline;
+  ;
+color: sandybrown;
   line-height: 1;
   width: 100%;
   list-style-type: square;
@@ -1119,7 +1240,8 @@ padding: 0;
 }
 
 .comment-header span {
-  font-family: &#39;Open Sans&#39;;
+  font-family: &#39;
+  Open Sans&#39;;
   width: 100%;
   height: auto;
   font-size: 18px;
@@ -1136,13 +1258,12 @@ padding: 0;
   margin-left: -2px;
   background: transparent;
   z-index: 5;
-
 }
 
 .comment-header a:hover {
   color: sienna;
   text-decoration: none;
-margin:0;
+  margin: 0;
 }
 
 .comments .comments-content .datetime a {
@@ -1174,7 +1295,8 @@ margin:0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(24, 26, 27, 0.5);;
+  background-color: rgba(24, 26, 27, 0.5);
+  ;
   padding: 3px;
 }
 
@@ -1243,15 +1365,15 @@ margin:0;
   float: right;
   font-size: 18px;
   color: sandybrown;
- padding-top:3px;
-padding-bottom:0px;
-padding-left:0px;
-padding-right:3px;
-margin-right: -10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 3px;
+  margin-right: -10px;
   position: relative;
   z-index: 2;
-background-color: transparent;
-font-weight: bold;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 .comment-thread ol ol {
@@ -1259,20 +1381,21 @@ font-weight: bold;
 }
 
 .comment-thread li li:before {
-  content: counter(contarcomentarios,decimal) &quot;.&quot; counter(contarbis,lower-latin);
+  content: counter(contarcomentarios,decimal) &quot;
+  .&quot; counter(contarbis,lower-latin);
   counter-increment: contarbis;
   float: right;
   font-size: 18px;
   color: sandybrown;
-padding-top:3px;
-padding-bottom:0px;
-padding-left:0px;
-padding-right:3px;
-margin-right: -10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 3px;
+  margin-right: -10px;
   position: relative;
   z-index: 2;
-background-color: transparent;
-font-weight: bold;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 #comment-editor {
@@ -1289,27 +1412,13 @@ font-weight: bold;
   box-sizing: border-box;
 }
 
-
-
-
 #widget-content, .widget-content {
-
-line-height: 1.0;
-background-color: transparent;
-max-width: 100%;
-max-height: 100%;
-display: inline;
+  line-height: 1.0;
+  background-color: transparent;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width:35em) {
   .section {
@@ -1370,16 +1479,7 @@ display: inline;
     margin: 0 50px;
   }
 }
-
-
-
-
-
-
-
-
-        </style>
-
+</style>
 
 <script type='text/javascript'>
 //<![CDATA[
@@ -1440,20 +1540,7 @@ function printRelatedLabels() {
 //]]>
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- PRO TECHNIFY Grid Style Start-->
+<!-- Grid Style Start-->
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <script type='text/javascript'>
@@ -1466,12 +1553,13 @@ img_thumb_width = 220;
 <script type='text/javascript'>
 //<![CDATA[
 /*
-Grid Style Hack For Blogger By www.protechnify.blogspot.com
+Grid Style Hack For Blogger 
 */
 function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<");for(var i=0;i<s.length;i++){if(s[i].indexOf(">")!=-1){s[i]=s[i].substring(s[i].indexOf(">")+1,s[i].length)}}strx=s.join("")}chop=(chop<strx.length-1)?chop:strx.length-2;while(strx.charAt(chop-1)!=' '&&strx.indexOf(' ',chop)!=-1)chop++;strx=strx.substring(0,chop-1);return strx+'...'}function createSummaryAndThumb(pID){var div=document.getElementById(pID);var imgtag="";var img=div.getElementsByTagName("img");var summ=summary_noimg;if(img.length>=1){imgtag='<span style="float:center; padding:0px;"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';summ=summary_img}var summary=imgtag+'<div>'+removeHtmlTag(div.innerHTML,summ)+'</div>';div.innerHTML=summary}
 //]]>
 </script>
 <style type='text/css'>
+
 .post {
   width: 47%;
   height: auto;
@@ -1480,42 +1568,39 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   position: relative;
   display: block;
   background-color: #181A1B;
-text-align: center;
-vertical-align: middle;
-border: solid 1px black;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 1px black;
 }
 
 .post h3 {
-text-align: center;
-vertical-align: bottom;
+  text-align: center;
+  vertical-align: bottom;
   max-height: 100px;
- height: 90px;
+  height: 90px;
   margin-top: 10px;
   margin-bottom: -30px;
-width: 94%;
-padding-top: 10px;
-padding-bottom: 5px;
-padding-right: 12px;
-padding-left: 5px;
-
+  width: 94%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  padding-left: 5px;
   line-height: 1.0;
   font-weight: bold;
   font-size: 100%;
   letter-spacing: -0.5px;
   background-color: transparent;
-overflow: hidden;
-
+  overflow: hidden;
 }
 
 .post-body {
   padding: auto;
-padding-top: 7px;
+  padding-top: 7px;
   height: auto;
   font-size: 0px;
   margin: 0px;
   color: transparent;
 }
-
 
 .post-footer {
   margin-top: 20px;
@@ -1540,7 +1625,7 @@ padding-top: 7px;
 
 
 
-/*--- Paginacao numerada inicio --- */
+/*--- Paginacao numerada --- */
 
 .pagenavi .pages {
   display: none;
@@ -1550,7 +1635,7 @@ padding-top: 7px;
   padding: 8px 10px;
   clear: both;
   text-align: center;
-color: #181A1B;
+  color: #181A1B;
   margin: 50px auto 15px;
 }
 
@@ -1558,19 +1643,19 @@ color: #181A1B;
   padding: 5px 10px;
   text-decoration: none;
   font-family: arial;
-  color:#EAECEE;
+  color: #EAECEE;
   margin: 2px;
   background-color: rgb(24,26,27,0.5);
   background-position: bottom;
-  border: 1px solid rgb(24,26,27,0.5);;
+  border: 1px solid rgb(24,26,27,0.5);
+  ;
   font-size: 22px;
 }
 
 #blog-pager a:hover, .pagenavi a:hover {
   background: sienna;
-color:#EAECEE;
+  color: #EAECEE;
   border: 1px solid rgb(24,26,27,0.5);
-
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1582,56 +1667,15 @@ color:#EAECEE;
 
 .pagenavi .current {
   background: sandybrown;
-color: #181A1B;
-font-weight: bold;
+  color: #181A1B;
+  font-weight: bold;
 } 
-
-
-
-/*--- Paginacao numerada fim --- */
-
-
-
-
-
-
-
-
 
 </style>
 </b:if>
 </b:if>
-<!-- PRO TECHNIFY Grid Style End -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </head>
+</head>
     <body>
-        <!--[if lt IE 9]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
         <b:if cond='data:blog.pageType == &quot;index&quot;'>
         <div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
             <meta expr:content='data:blog.title' itemprop='name'/>
@@ -1644,7 +1688,7 @@ font-weight: bold;
         <div class='container'>
             <header>
                 <b:section class='header' id='header' maxwidgets='3' showaddelement='yes' translate='no'>
-                  <b:widget id='Header1' locked='false' title='Tijolada Virtual (Cabeçalho)' type='Header' version='1'>
+                  <b:widget id='Header1' locked='false' title='TIJOLADA (Cabeçalho)' type='Header' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='displayUrl'/>
                       <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1658,15 +1702,7 @@ font-weight: bold;
 
   <b:if cond='data:useImage'>
     <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-      <!--
-      Show image as background to text. You can't really calculate the width
-      reliably in JS because margins are not taken into account by any of
-      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
-      width if the user is using shrink to fit.
-      This results in a margin-width's worth of pixels being cropped. If the
-      user is not using shrink to fit then we expand the header.
-      -->
-      <b:if cond='data:mobile'>
+            <b:if cond='data:mobile'>
         <div id='header-inner'>
           <div class='titlewrapper' style='background: transparent' translate='no'>
             <h1 class='title' style='background: transparent; border-width: 0px'>
@@ -1686,19 +1722,16 @@ font-weight: bold;
         </div>
       </b:if>
     <b:else/>
-      <!--Show the image only-->
-      <div id='header-inner' translate='no'>
+            <div id='header-inner' translate='no'>
         <a expr:href='data:blog.homepageUrl' style='display: block'>
           <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
         </a>
-        <!--Show the description-->
         <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
           <b:include name='description'/>
         </b:if>
       </div>
     </b:if>
   <b:else/>
-    <!--No header image -->
     <div id='header-inner' translate='no'>
       <div class='titlewrapper'>
         <h1 class='title'>
@@ -1722,7 +1755,7 @@ font-weight: bold;
                   </b:widget>
                   <b:widget id='PageList1' locked='false' title='' type='PageList'>
                     <b:widget-settings>
-                      <b:widget-setting name='pageListJson'><![CDATA[{'4069123727400631354': {'href': 'https://tijolada-virtual.blogspot.com/p/sitemap.html', 'title': 'Sitemap', 'position': 0}, '6250675404697626294': {'href': 'https://tijolada-virtual.blogspot.com/p/contato_9.html', 'title': 'Contato', 'position': 1}}]]></b:widget-setting>
+                      <b:widget-setting name='pageListJson'><![CDATA[{'4069123727400631354': {'href': 'https://tijolada-virtual.blogspot.com/p/sitemap.html', 'title': 'Sitemap', 'position': 0}, '5949104729239544643': {'href': 'https://www.tijolada.com/p/contato_23.html', 'title': 'Contato', 'position': 1}, '2689462500240483122': {'href': 'https://www.tijolada.com/p/sobre_23.html', 'title': 'About', 'position': 2}}]]></b:widget-setting>
                       <b:widget-setting name='homeTitle'>Página inicial</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
@@ -1760,109 +1793,37 @@ font-weight: bold;
                 <b:section class='main' id='main' showaddelement='no'>
                   <b:widget id='HTML2' locked='false' title='' type='HTML' version='1'>
                     <b:widget-settings>
-                      <b:widget-setting name='content'>&lt;!---------------------------------------------
-    Blogger Slideshow Widget by
-    http://imagesliderforblogger.blogspot.com/
-    org. by dimpost.com 
------------------------------------------------&gt;
-&lt;!--  Camera_Slideshow Styles  --&gt;
-&lt;link rel=&quot;stylesheet&quot; id=&quot;camera-css&quot; href=&quot;http://project.dimpost.com/camera-slideshow/css/camera.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
-&lt;!-- Camera Slideshow Scripts --&gt;
-&lt;script type=&#39;text/javascript&#39; src=&#39;https://code.jquery.com/jquery-2.1.4.min.js&#39;&gt;&lt;/script&gt;
-&lt;script type=&#39;text/javascript&#39; src=&#39;http://project.dimpost.com/camera-slideshow/scripts/jquery.mobile.customized.min.js&#39;&gt;&lt;/script&gt;
-&lt;script type=&#39;text/javascript&#39; src=&#39;http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js&#39;&gt;&lt;/script&gt;
-&lt;script type=&#39;text/javascript&#39; src=&#39;http://project.dimpost.com/camera-slideshow/scripts/camera.min.js&#39;&gt;&lt;/script&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-jQuery(function() {
-    jQuery(&#39;#camera_wrap_1&#39;).camera({
-        time: 2500, // milliseconds between the end of the sliding effect and the start of the nex one
-        transPeriod: 1200, // length of the sliding effect in milliseconds
-        thumbnails: false, // thumnails &amp; tooltip is controlled by it
-        pagination: true, // only when &quot;pagination&quot; is set to &quot;false&quot; thumbnails will be visible
-        fx: &#39;curtainTopLeft, curtainTopRight, curtainBottomLeft, curtainBottomRight, curtainSliceLeft, curtainSliceRight, blindCurtainTopLeft, blindCurtainTopRight, blindCurtainBottomLeft, blindCurtainBottomRight, blindCurtainSliceBottom, blindCurtainSliceTop, stampede, mosaic, mosaicReverse, mosaicRandom, mosaicSpiral, mosaicSpiralReverse, topLeftBottomRight, bottomRightTopLeft, bottomLeftTopRight, bottomLeftTopRight, scrollLeft, scrollRight, scrollHorz, scrollBottom, scrollTop&#39;, // transition effects
-        hover: false, // Pause on hover
-        height: &#39;50%&#39; // slideshow height (50% is default)
-    });
-});
-&lt;/script&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.fluid_container {
-    margin: 0 auto;
-    /* aling centered */
-    width: 100%;
-    max-width: 1030px;
-    overflow: hidden;
-float: left;
-}
+                      <b:widget-setting name='content'>&lt;marquee onmouseover=&quot;stop()&quot; onmouseout=&quot;start()&quot; scrolldelay=&quot;50&quot;&gt;
+&lt;div style=&quot;border: none; padding:5px; color: #F6F8F6;&quot;&gt;
+&lt;script language=&quot;JavaScript&quot;&gt;
+citas = new Array(4)
+citas[0] = &quot;Você deve ter ouvido que nós não estamos no negócio de tomar prisioneiros, nós estamos no negócio de matar nazistas. E cara, o negócio vai muito bem. -Aldo Raine&quot;
+citas[1] = &quot;Eu não quero saber do que você sabe ou não sabe, mas vou torturar você de qualquer maneira. Não para conseguir informações. É divertido para mim torturar um policial. Você pode dizer o que quiser porque eu já ouvi tudo antes. Tudo o que você quer é rezar para ganhar uma morte rápida, a qual você não vai ter. -Mr. Blonde&quot;
+citas[2] = &quot;O homem que puxa a alavanca que quebra seu pescoço vai ser um homem sem paixão. E essa falta de paixão é a essência da justiça. Porque justiça feita com paixão está sempre em perigo de não ser justiça. -Oswaldo Mobray&quot;
+citas[3] = &quot;É aí que você sabe que encontrou alguém especial. Quando pode apenas calar a boca e confortavelmente apreciar o silêncio. -Mia Wallace&quot;
+citas[4] = &quot;Se minhas respostas assustam você então pare de fazer perguntas assustadoras. -Jules Winnfield&quot;
+citas[5] = &quot;Eu posso nunca ter gostado de você. De fato, eu desprezo você. Mas isso não significa que não respeite você. Morrer em nosso sono é um luxo que raramente podemos comprar. É meu presente para você. -Elle Driver&quot; 
+citas[6] = &quot;Posso não ter um centavo no bolso, mas tenho um sorriso no rosto e isso vale mais que todo dinheiro do mundo. -Seu Madruga&quot;
+citas[7] = &quot;Eu sabia que você era idiota, mas não a nível executivo! -Seu Madruga&quot;
+citas[8] = &quot;São todas assim: começam ficando com o chapéu e acabam ficando com a carteira! -Seu Madruga&quot;
+citas[9] = &quot;No escuro do cinema, bruxa por bruxa! -Seu Madruga&quot;
+citas[10] = &quot;Antes de virar mendigo eu prefiro pedir dinheiro na rua. -Chaves&quot;
+citas[11] = &quot;A luz elétrica é mais útil que a luz do Sol, porque a luz do Sol ilumina só quando é dia, ou seja, quando não faz falta e a luz elétrica ilumina só de noite, quando está tudo escuro. -Chaves&quot;
+citas[12] = &quot;Acho que é bem difícil amar os inimigos, mas amar os idiotas é quase impossível. -Seu Madruga&quot;
+citas[13] = &quot;Eu te empresto pra você ver que eu sou um menino bom que ajuda os meninos pobres do terceiro mundo. -Quico&quot;
+citas[14] = &quot;Mas de qualquer forma eu queria saber como é que eu vou pagar tudo isso, não responda. - Seu Madruga&quot;
+aleatorio = Math.random() * (citas.length)
+aleatorio = Math.floor(aleatorio)
+document.write(citas[aleatorio])
+&lt;/script&gt;&lt;/div&gt;&lt;/marquee&gt;
 
-
-/* Blogger CSS Conflict Fix */
-
-.camera_pag_ul {
-    border: none !important;
-    background: none !important;
-}
-
-.camera_pag_ul li {
-    float: inherit !important;
-    padding: inherit !important;
-}
-
-.camera_pag_ul {
-    margin: 0 !important;
-    border: 0 !important;
-}
-&lt;/style&gt;
-&lt;div class=&quot;fluid_container&quot;&gt;
-    &lt;!-- camera_slideshow camera_wrap--&gt;
-&lt;div class=&quot;camera_wrap&quot; id=&quot;camera_wrap_1&quot;&gt;
-       
-
- &lt;div data-link=&quot;https://tijolada-virtual.blogspot.com/2020/02/windows-10-pro-x64-office-2019-ptbr-pre.html&quot; data-thumb=&quot;https://1.bp.blogspot.com/-PRKTeoDHsUY/Xj_JaY7p90I/AAAAAAAAhHg/XCRBTFr6uDAZATll0UOvg0Ff6MIEOUFegCPcBGAYYCw/s9600/maxresdefault.jpg&quot; data-src=&quot;https://1.bp.blogspot.com/-PRKTeoDHsUY/Xj_JaY7p90I/AAAAAAAAhHg/XCRBTFr6uDAZATll0UOvg0Ff6MIEOUFegCPcBGAYYCw/s9600/maxresdefault.jpg&quot;&gt;
-            &lt;div class=&quot;camera_caption fadeFromBottom&quot;&gt;
-                Download Windows 10 Pro x64. &lt;em&gt;Baixe de graça!&lt;/em&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-       
-
- &lt;div data-link=&quot;https://tijolada-virtual.blogspot.com/2020/03/chaves-coronavirus-trailer.html&quot; data-thumb=&quot;https://i.ytimg.com/vi/hAQrR3ve0hU/maxresdefault.jpg&quot; data-src=&quot;https://i.ytimg.com/vi/hAQrR3ve0hU/maxresdefault.jpg&quot;&gt;
-            &lt;div class=&quot;camera_caption fadeFromBottom&quot;&gt;
-                CHAVES - CORONAVÍRUS (TRAILER)
-            &lt;/div&gt;
-        &lt;/div&gt;
-        
-
-&lt;div data-link=&quot;https://tijolada-virtual.blogspot.com/2020/03/chester-bennington-recording-vocals-in.html&quot; data-thumb=&quot;https://i.ytimg.com/vi/T1kla17SpEA/maxresdefault.jpg&quot; data-src=&quot;https://i.ytimg.com/vi/T1kla17SpEA/maxresdefault.jpg&quot;&gt;
-            &lt;div class=&quot;camera_caption fadeFromBottom&quot;&gt;
-                CHESTER BENNINGTON RECORDING VOCALS IN THE STUDIO
-            &lt;/div&gt;
-        &lt;/div&gt;
-       
-
- &lt;div data-link=&quot;https://tijolada-virtual.blogspot.com/2020/02/config-csgo-sem-recuo-2020.html&quot; data-thumb=&quot;https://1.bp.blogspot.com/-XV6JKALqids/XkjVBJUAiEI/AAAAAAAAhMc/WN-iXsSg9KITQ4Z-fQMC3d_FFtltbig_QCLcBGAsYHQ/s1600/thumb.jpg&quot; data-src=&quot;https://1.bp.blogspot.com/-XV6JKALqids/XkjVBJUAiEI/AAAAAAAAhMc/WN-iXsSg9KITQ4Z-fQMC3d_FFtltbig_QCLcBGAsYHQ/s1600/thumb.jpg&quot;&gt;
-            &lt;div class=&quot;camera_caption fadeFromBottom&quot;&gt;
-                NOVA CONFIG CS:GO SEM RECUO | 2020
-            &lt;/div&gt;
-        &lt;/div&gt;
-      
-
-  &lt;div data-link=&quot;https://tijolada-virtual.blogspot.com/2020/02/internet-download-manager-635-build-17.html&quot; data-thumb=&quot;https://i.ytimg.com/vi/gGWvFU3asnE/maxresdefault.jpg&quot; data-src=&quot;https://i.ytimg.com/vi/gGWvFU3asnE/maxresdefault.jpg&quot;&gt;
-            &lt;div class=&quot;camera_caption fadeFromBottom&quot;&gt;
-               INTERNET DOWNLOAD MANAGER 6.35 X86/X64
-            &lt;/div&gt;
-       
-
- &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- #camera_wrap_1 --&gt;
-&lt;/div&gt;
-&lt;!-- .fluid_container --&gt;</b:widget-setting>
+&lt;iframe src=&quot;https://tunein.com/embed/player/s85089?autoplay=true&quot;
+style=&quot;width:100%;height:100px;&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot;&gt;&lt;/iframe&gt;</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
-<b:if cond='data:blog.homepageUrl == data:blog.url'>
+                                              <!-- RADIO APARECE APENAS NESSA URL ESPECÍFICA  -->
+           <b:if cond='data:blog.url == &quot;https://www.tijolada.com/p/tijolada.html&quot;'>
 
-
-  <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
     <h2 class='title'><data:title/></h2>
   </b:if>
@@ -1874,7 +1835,81 @@ float: left;
 </b:if>
 </b:includable>
                   </b:widget>
-                  <b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog' version='1'>
+                  <b:widget id='HTML1' locked='false' title='' type='HTML'>
+                    <b:widget-settings>
+                      <b:widget-setting name='content'>&lt;style&gt;
+#search-box {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+#search-form {
+  height: 40px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #181A1B;
+  overflow: hidden;
+}
+
+#search-text {
+  font-size: 18px;
+  color: #f4a460;
+  border-width: 0;
+  background: transparent;
+}
+
+#search-box input[type=&quot;text&quot;] {
+  width: 90%;
+  padding: 11px 0 12px 1em;
+  color: #f4a460;
+  outline: none;
+}
+
+#search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 42px;
+  width: 80px;
+  font-size: 19px;
+  color: #000;
+  text-align: center;
+  line-height: 42px;
+  border-width: 0;
+  background-color: #f4a460;
+ /*--define a cor do botão Buscar--*/
+  -webkit-border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px dotted #000;
+}
+&lt;/style&gt;
+&lt;div id=&#39;search-box&#39;&gt;
+  &lt;form action=&#39;/search&#39; id=&#39;search-form&#39; method=&#39;get&#39; target=&#39;_top&#39;&gt;
+    &lt;input id=&#39;search-text&#39; name=&#39;q&#39; placeholder=&#39;O que você procura ?&#39; type=&#39;text&#39;/&gt;
+    &lt;button id=&#39;search-button&#39; type=&#39;submit&#39;&gt;&lt;span&gt;Buscar&lt;/span&gt;&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+                  </b:widget>
+                  <b:widget id='Blog1' locked='true' title='Postagens do blog' type='Blog' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='commentLabel'>Comentários</b:widget-setting>
                       <b:widget-setting name='showShareButtons'>false</b:widget-setting>
@@ -1890,12 +1925,12 @@ float: left;
                       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                       <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='backlinksLabel'>Posts Parecidos</b:widget-setting>
-                      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
                       <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#2196f3</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
                       <b:widget-setting name='showAuthor'>true</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#757575</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='postLabelsLabel'>Tags:</b:widget-setting>
@@ -1926,15 +1961,6 @@ float: left;
         <div class='post-outer'>
           <b:include data='post' name='post'/>
 
-
-
-
-
-
-
-
-
-
           <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
         </div>
 
@@ -1953,12 +1979,7 @@ float: left;
     <!-- navigation -->
    <b:if cond='data:blog.pageType == &quot;index&quot;'><b:include name='page-navi'/><b:else/><b:if cond='data:blog.pageType == &quot;archive&quot;'><b:include name='page-navi'/></b:if><b:else/><b:if cond='data:blog.pageType == &quot;item&quot;'><b:include name='nextprev'/></b:if></b:if>
 
-
-
   <div class='clear'/>
-
-
-
     <!-- feed links -->
     <br/>
     <center><div/></center>
@@ -2084,9 +2105,6 @@ float: left;
 
       <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
         
-        
-        
-        
        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
           <b:loop values='data:post.comments' var='comment'>
             <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
@@ -2211,12 +2229,6 @@ float: left;
 </b:includable>
                     <b:includable id='mobile-index-post' var='post'>
 
-
-
-
-
-
-
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
       <div class='date-header'>
@@ -2229,9 +2241,7 @@ float: left;
         <h3 class='mobile-index-title entry-title' itemprop='name'>
           <data:post.title/>
         </h3>
-
         <div class='mobile-index-arrow'>&amp;rsaquo;</div>
-
         <div class='mobile-index-contents'>
           <b:if cond='data:post.thumbnailUrl'>
             <div class='mobile-index-thumbnail'>
@@ -2240,7 +2250,6 @@ float: left;
               </div>
             </div>
           </b:if>
-
           <div class='post-body' translate='yes'>
             <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
           </div>
@@ -2363,14 +2372,7 @@ float: left;
 
 
                     <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'>
-
-
-
-
-
                       <b:eval expr='data:post.date format &quot; dd/MM/YYYY &quot; '/>
-
-
 </abbr></a>
                   </b:if>
                 </b:if>
@@ -2402,19 +2404,6 @@ float: left;
 </b:includable>
                     <b:includable id='nextprev'>
   
-                      
-                      
-                      
-                      
-                      
-     
-                      
-                      
-                      
-                      
-                      
-                      
-                      
   <div class='clear'/>
 </b:includable>
                     <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 8,firstText: &quot;Primeira&quot;,lastText: &quot;Última&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://xkaroline.github.io/followyourdreams/paginacaonumerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
@@ -2457,23 +2446,20 @@ float: left;
       </div>
     </b:if>
 
-
-
     <b:if cond='data:blog.pageType == &quot;item&quot;'><br/>
-
 
     <div class='ad-post'>
 
-      <center>ADSENSE</center>
+      <center><script async='async' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+<!-- Post Footer -->
+<ins class='adsbygoogle' data-ad-client='ca-pub-5291850394545060' data-ad-format='auto' data-ad-slot='6450019783' data-full-width-responsive='true' style='display:block'/>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
 
     </div>
 
 </b:if>
-
-
-
-
-
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
     <div class='post-footer'>
@@ -2496,7 +2482,6 @@ float: left;
         </b:if>
       </span>
     
-      
       <span class='post-timestamp'>
       <b:if cond='data:post.url'>
       <meta expr:content='data:post.url.canonical'/>
@@ -2506,8 +2491,7 @@ float: left;
       </a>
     </b:if>
       </span>
-
-            
+  
       <span class='reaction-buttons'>
         <b:if cond='data:top.showReactions'>
           <table border='0' cellpadding='0' cellspacing='0' width='96%'><tr>
@@ -2556,65 +2540,35 @@ float: left;
           <b:loop values='data:post.labels' var='label'>
             <a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
 
-
-
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=10&quot;' type='text/javascript'/>
+<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=5&quot;' type='text/javascript'/>
 </b:if>
 
-
-
-
-
-
-
-          </b:loop>
+ </b:loop>
         </b:if>
       </span>
       </div>
 
-      
-      
-      
-      
-      
       <div class='post-footer-line post-footer-line-3'>
-
-
       </div>
       
-
           <div class='post-footer-line post-footer-line-4'>
 
-   
           </div>
 
-
-
-
-
-    
     </div>
-
     </b:if>
-
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 
     <h2>🌏 Compartilhe esse post:</h2>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e57e994eb64955c' type='text/javascript'/>
+<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=YOUR-ID-HERE' type='text/javascript'/>
 
-
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class='addthis_inline_share_toolbox_luxi'/>
             <hr/>
 </b:if>
-
-
-
-
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'><h2>💡 Você pode querer ver isso:</h2></b:if>
 <script type='text/javascript'>
@@ -2622,20 +2576,10 @@ removeRelatedDuplicates();
 printRelatedLabels();
 </script>
 
-
-
   </div>
 
-
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<hr/><span>
-
-  <h2>💬 Sistema de comentários:</h2>
-
-Você vai precisar de uma <a href='https://accounts.google.com/signup/v2/webcreateaccount' target='_blank'>conta Google</a> para comentar neste post.<br/>
-Os comentários são de <b>responsabilidade exclusiva de seus autores</b> e não representam a opinião deste site. Se achar algo que viole os termos de uso, denuncie. Leia as <a href='https://tijolada-virtual.blogspot.com/p/faq.html'>perguntas mais frequentes</a> para saber o que é impróprio ou ilegal.
-
-                      </span><br/>
+<hr/>
 
 </b:if>
 </b:includable>
@@ -2654,70 +2598,61 @@ Os comentários são de <b>responsabilidade exclusiva de seus autores</b> e não
                     <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
  <div class='status-msg-wrap'>
-
-
 <b:if cond='data:blog.homepageUrl != data:blog.url'> 
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
-
-
-   <div class='marcador'>Tijolada Virtual: <span class='marcadora'><data:blog.pageName/></span></div>
+   <div class='marcador'>📂 <span class='marcadora'><data:blog.pageName/></span></div>
    </b:if></b:if>
    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
      <hr/>
 <center>💀 ERRO 404 - Página não encontrada 💀</center><br/>
 <br/>
-
 <div class='div404'>A página que você está procurando não está mais aqui, ela pode ter sido <b>excluída</b>, <b>movida</b> ou <b>ocultada</b>.<br/>
 <br/>
 Por favor, tente pesquisar novamente utilizando outras palavras na caixa de Pesquisa abaixo:<br/><br/>
 </div>
 
-
 <style type='text/css'>
 #pesquisafsm-caixa {
-background: #f5f5f5; padding:9px; border:0 none; width:400px;
+  background: #f5f5f5;
+  padding: 9px;
+  border: 0 none;
+  width: 400px;
 }
+
 #pesquisafsm-botao {
-border: 0px solid #222;
-color: #fff;
-background-color: #263238;
-margin-left: -5px;
-font: &#39;trebuchet ms&#39;, trebuchet;
-padding:8px;
-border:0 none;
-font-weight:bold;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
+  border: 0px solid #222;
+  color: #fff;
+  background-color: #263238;
+  margin-left: -5px;
+  font: &#39;
+  trebuchet ms&#39;, trebuchet;
+padding: 8px;
+  border: 0 none;
+  font-weight: bold;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
+
 #pesquisafsm-botao:hover {
-cursor: pointer;
-background-color: #263238;
+  cursor: pointer;
+  background-color: #263238;
 }
+
 #div404 {
-padding: 20px;
-
+  padding: 20px;
 }
-
-
 
 </style><center>
 <form action='/search' id='searchthis' method='get' style='display: inline;'>
-<input id='pesquisafsm-caixa' name='q' placeholder='O que está procurando?' size='40' type='text'/> <input id='pesquisafsm-botao' type='submit' value='🔎 Pesquisar'/> </form></center>
+<input id='pesquisafsm-caixa' name='q' placeholder='O que está procurando?' size='40' type='text'/> <input id='pesquisafsm-botao' type='submit' value='Pesquisar'/> </form></center>
 
    </b:if>
-   
-   
+     
    
 </div>
   </b:if>
 </b:includable>
                     <b:includable id='threaded-comment-form' var='post'>
-
-
-
-
-
-
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -2958,6 +2893,96 @@ padding: 20px;
   </div>
 </b:includable>
                   </b:widget>
+                  <b:widget id='HTML4' locked='false' title='Disqus' type='HTML'>
+                    <b:widget-settings>
+                      <b:widget-setting name='content'><![CDATA[<!-- Disqus Widget -->]]></b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+<script type='text/javascript'>
+var disqus_shortname = &#39;YOUR-DISQUS-ID&#39;;
+var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+if (!disqus_blogger_current_url.length) {
+disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+}
+var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
+var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
+</script>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+#comments {display:none;}
+</style>
+<script type='text/javascript'>
+(function() {
+    var bloggerjs = document.createElement(&#39;script&#39;);
+    bloggerjs.type = &#39;text/javascript&#39;;
+    bloggerjs.async = true;
+    bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_item.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
+</script>
+</b:if>
+<style type='text/css'>
+.post-comment-link { visibility: hidden; }
+</style>
+<script type='text/javascript'>
+(function() {
+var bloggerjs = document.createElement(&#39;script&#39;);
+bloggerjs.type = &#39;text/javascript&#39;;
+bloggerjs.async = true;
+bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index.js&#39;;
+(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
+</script>
+</b:includable>
+                  </b:widget>
+                  <b:widget id='Label1' locked='false' title='Keywords' type='Label' version='1'>
+                    <b:widget-settings>
+                      <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
+                      <b:widget-setting name='display'>LIST</b:widget-setting>
+                      <b:widget-setting name='selectedLabelsList'><![CDATA[180 - Duas Leis da Vida para Ganhar Dinheiro,2012,260 - Para que serve o cavalo?,328 - Escravidao Moderna: A Hipocrisia da Esquerda Escravocrata,50 cent,6 COISAS QUE VOCÊ NÃO DEVE CONTAR PARA NINGUÉM,A Escolinha do Golias - Episódio 13,A Escolinha do Golias - Episódio 15,A RUMOROSA | OS MELHORES VILÕES DO CHAPOLIN #21,Agora a porra ficou séria,Bem Que Se Kiss Dia De Farofa 27-1-21,Boiola,Bolha no mercado? JavaScript passou Java? Prefere fazer Vídeo que Programar? [+50 PERGUNTAS],CRAQUE NETO! XINGAMENTOS E PISTOLADAS DIRECIONADAS A JOGADORES E TÉCNICOS,Categorias de Aristóteles - Olavo de Carvalho,Chaves #42 - A Cruz Vermelha (1974),Ciência e falsa ciência,Curiosidades,Desprezo Infinito,Direitos,ELIEZER VIA INFINDA – Flow Podcast #177,Elon Musk: Biografia do Dono da Tesla e SpaceX | Resumo Completo do Livro Elon Musk de Ashlee Vance,Especiais,Experiências,FODA-SE,Feliz Ano Novo,Geral,Gerando Discórdia,Gifs,Gordos,Humor,IFTTT,IGOR E MONARK (FLOW) - Venus Podcast #00,Imagem,Imagens,January 25,Junior Kyle,Liked,Links da Semana,Listas,MC VITINHO AVASSALADOR - Flow Podcast #296,Memes,Mensagens,O "grande" RESET da HUMANIDADE,O MUNDO PRECISA SABER DISSO,O TEMIDO QUASE NADA! ft. ROSA,Orkut,Os Trapalhões - Mussum e Tião Macalé tentam pendurar a conta no bar do Didi,Paciência,Papo Sério,Pornô,Prova,Saúde e tudo mais,Shane,Sobrenatural,Subliminar,Tirinhas,Vejam o que é um "professor emérito" na USP. É o padrão-USP de qualidade: Ruim e Infausto.,Videos,YouTube,acordar,assembléia de deus,bagunça,bico,bolinha,café da manhã,cerebro,corinthians,epic,estadio,fobia,gatos,homem,homer,internet,janela,lego,libertadores,msn,natal,pivete,praia,radio,ronaldinho,segunda-feira,seu madruga,sol,sonho,tatuagem,travesseiro,twitter,vida real]]></b:widget-setting>
+                      <b:widget-setting name='showType'>ALL</b:widget-setting>
+                      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+                      
+                      <b:if cond='data:blog.url == &quot;https://www.tijolada.com/p/tijolada.html&quot;'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div></b:if>
+</b:includable>
+                  </b:widget>
                 </b:section>
             </div>
 
@@ -2981,9 +3006,20 @@ padding: 20px;
             </macro:include>
 
             <b:section class='foot' id='footer-3' showaddelement='no'>
+              <b:widget id='BloggerButton1' locked='false' title='' type='BloggerButton'>
+                <b:widget-settings>
+                  <b:widget-setting name='button'>https://resources.blogblog.com/html/buttons/blogger-powerby-blue.gif</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+ <div class='widget-content'>
+    <a href='https://www.blogger.com'><img alt='Powered By Blogger' expr:src='data:fullButton'/></a>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+              </b:widget>
               <b:widget id='HTML3' locked='false' title='' type='HTML' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='content'><![CDATA[<center><b>Tijolada Virtual</b> made with 💖 by <a href="https://twitter.com/guifalcon" target="_blank">FaLcoN</a></center>]]></b:widget-setting>
+                  <b:widget-setting name='content'><![CDATA[<center><b>Tijolada</b> made with 💖 by <a href="https://github.com/guilhermefalcon/falconThemeDark" target="_blank">FaLcoN</a></center>]]></b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2997,38 +3033,12 @@ padding: 20px;
   <b:include name='quickedit'/>
 </b:includable>
               </b:widget>
-              <b:widget id='BloggerButton1' locked='false' title='' type='BloggerButton'>
-                <b:widget-settings>
-                  <b:widget-setting name='button'>https://resources.blogblog.com/html/buttons/blogger-powerby-blue.gif</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
- <div class='widget-content'>
-    <a href='https://www.blogger.com'><img alt='Powered By Blogger' expr:src='data:fullButton'/></a>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-              </b:widget>
             </b:section>
             </footer>
         </div>
 
- 
-
-
-
-
 <!-- SHARE BUTTONS ADD-THIS MOBILE BOTTOM -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e57e994eb64955c' type='text/javascript'/>
-
-
-
-
-
-
-
-
-
-
+<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=YOUR-ID-HERE' type='text/javascript'/>
 
     </body>
 
@@ -3066,142 +3076,10 @@ padding: 20px;
         </macro:if>
     </macro:includable>
 
-
-
-
 <b:section-contents id='sidebar-right-1'>
-  <b:widget id='HTML4' locked='false' title='🔎 PESQUISAR' type='HTML'>
+  <b:widget id='PopularPosts1' locked='false' title='🔥 TOP 10 THIS WEEK' type='PopularPosts'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div id=&quot;_bcd_141013&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-form#_bcd_141013_search_form {
-    position: relative;
-    display: block;
-    clear: both;
-    float: none;
-	
-	border: /*border-width-s*/1px solid;/*border-width-e*/
-	border-color: /*border-color-s*/rgb(24,26,27,0.5);/*border-color-e*/
-    padding: /*padding-s*/5px;/*padding-e*/
-    font-size: /*font-size-s*/18px;/*font-size-e*/
-	background-color: /*bg-color-s*/#181A1B;/*bg-color-e*/
-}
-input#_bcd_141013_search_text {
-    width: 100%;
-    border: none;
-    margin: 0;
-	padding: 0;
-    line-height: 2em;
-    height: 2em;
-    outline: none;
-	background: transparent;
-	
-	color: /*text-color-s*/sandybrown;/*text-color-e*/
-}
-button#_bcd_141013_search_submit:hover {
-    opacity: 0.8;
-}
-button#_bcd_141013_search_submit {
-    width: auto;
-	padding: 0 /*padding-s*/5px;/*padding-e*/
-    margin: 0;
-    position: absolute;
-    right: /*padding-s*/5px;/*padding-e*/
-    top: /*padding-s*/5px;/*padding-e*/
-    line-height: 2em;
-    height: 2em;
-    text-align: center;
-    cursor: pointer;
-	border: none;
-	min-width: 2em;
-	
-	color: /*submit-text-color-s*/sandybrown;/*submit-text-color-e*/
-    background: /*submit-bg-color-s*/transparent;/*submit-bg-color-e*/
-}
-html[dir=&quot;rtl&quot;] button#_bcd_141013_search_submit {
-	right: auto;
-	left: /*padding-s*/5px;/*padding-e*/
-}
-&lt;/style&gt;
-
-&lt;form action=&#39;/search&#39; id=&#39;_bcd_141013_search_form&#39; method=&#39;get&#39;&gt;
-	&lt;input id=&#39;_bcd_141013_search_text&#39; name=&#39;q&#39; placeholder=&quot;O que você procura?&quot; data-placeholder-end=&quot;&quot; type=&#39;text&#39;/&gt;
-	&lt;button type=&quot;submit&quot; id=&quot;_bcd_141013_search_submit&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;!--endofsearsubmit--&gt;
-&lt;/form&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-var ss = document.getElementsByTagName(&#39;link&#39;);
-for (var i = 0; i &lt; ss.length; i++) {
-	var href = ss[i].getAttribute(&#39;href&#39;);
-	if (href &amp;&amp; href != null &amp;&amp; href.indexOf(&quot;font-awesome/&quot;) != -1) {
-        break;
-	}
-}
-if (i &gt;= ss.length) {
-	var link = document.createElement(&quot;link&quot;);
-	link.rel = &quot;stylesheet&quot;;
-	link.href = &quot;http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;;
-}
-document.getElementsByTagName(&quot;head&quot;)[0].appendChild(link);
-
-
-&lt;/script&gt;</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='FeaturedPost1' locked='false' title='' type='FeaturedPost' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='showSnippet'>false</b:widget-setting>
-      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-      <b:widget-setting name='postId'>663536288172761691</b:widget-setting>
-      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-      <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- Only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <b:include name='content'/>
-
-  <b:include name='quickedit'/>
-</b:includable>
-    <b:includable id='content'>
-  <div class='post-summary'>
-    <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
-      <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
-    </b:if>
-    <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
-      <p>
-        <data:postSummary/>
-      </p>
-    </b:if>
-    <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
-      <img class='image' expr:src='data:postFirstImage'/>
-    </b:if>
-  </div>
-
-  <style type='text/css'>
-    .image {
-      width: 96%;
-    }
-  </style>
-</b:includable>
-  </b:widget>
-  <b:widget id='PopularPosts1' locked='false' title='🔥 Top 5 da Semana' type='PopularPosts'>
-    <b:widget-settings>
-      <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+      <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
       <b:widget-setting name='showThumbnails'>false</b:widget-setting>
       <b:widget-setting name='showSnippets'>false</b:widget-setting>
       <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
@@ -3247,53 +3125,119 @@ document.getElementsByTagName(&quot;head&quot;)[0].appendChild(link);
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='🔖 Categorias' type='Label'>
+  <b:widget id='Image4' locked='false' title='' type='Image'>
     <b:widget-settings>
-      <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/-4m-AlNLQ0Ho/YBa5HumJkVI/AAAAAAAAmWU/f4HeJy8R-wAtVN73c1mxNBAlmdQ0Sn-qwCK4BGAYYCw/s1600/1485462622.gif</b:widget-setting>
+      <b:widget-setting name='displayHeight'>360</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>200</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='displayWidth'>640</b:widget-setting>
+      <b:widget-setting name='link'>https://www.twitch.tv/guilhermefalcon</b:widget-setting>
+      <b:widget-setting name='caption'/>
     </b:widget-settings>
     <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <b:if cond='data:blog.url == data:label.url'>
-              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-            <b:else/>
-              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-            </b:if>
-            <b:if cond='data:showFreqNumbers'>
-              <span dir='ltr'>(<data:label.count/>)</span>
-            </b:if>
-          </li>
-        </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
     </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
     <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Image1' locked='false' title='' type='Image'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://data.photofunky.net/output/image/4/1/7/1/4171e9/photofunky.gif</b:widget-setting>
+      <b:widget-setting name='displayHeight'>500</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='displayWidth'>1000</b:widget-setting>
+      <b:widget-setting name='link'>https://www.youtube.com/channel/UC1GL0q0PDcuIh7Gu3yxaqMw</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Image3' locked='false' title='' type='Image'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://card.exophase.com/2/0/77233.png?1612101987</b:widget-setting>
+      <b:widget-setting name='displayHeight'>142</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>200</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='displayWidth'>425</b:widget-setting>
+      <b:widget-setting name='link'>https://www.exophase.com/user/guifalcon/</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='HTML5' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftijoladablog&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=776665079574338" width="540" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
   </div>
+
+  <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='💼 Arquivo' type='BlogArchive'>
+  <b:widget id='Feed1' locked='false' title='' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>http://www.tijolada.com/feeds/posts/default?alt=rss</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>false</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='BlogArchive1' locked='false' title='💼 ARCHIVE' type='BlogArchive'>
     <b:widget-settings>
       <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
       <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
@@ -3301,7 +3245,7 @@ document.getElementsByTagName(&quot;head&quot;)[0].appendChild(link);
       <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
       <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
       <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='chronological'>true</b:widget-setting>
       <b:widget-setting name='showPosts'>false</b:widget-setting>
       <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
     </b:widget-settings>
@@ -3373,97 +3317,28 @@ document.getElementsByTagName(&quot;head&quot;)[0].appendChild(link);
   </a>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML6' locked='false' title='🐦 TUINTO' type='HTML'>
+  <b:widget id='Stats1' locked='false' title='🌎 PAGE VIEWS' type='Stats'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<a class="twitter-timeline" data-lang="pt" data-height="555" data-theme="dark" href="https://twitter.com/TijoladaVirtual?ref_src=twsrc%5Etfw">Tweets by TijoladaVirtual</a> <script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>]]></b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='PageList2' locked='false' title='Páginas' type='PageList'>
-    <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://tijolada-virtual.blogspot.com/', 'title': 'Página inicial', 'position': 0}, '6250675404697626294': {'href': 'https://tijolada-virtual.blogspot.com/p/contato_9.html', 'title': 'Contato', 'position': 1}, '4069123727400631354': {'href': 'https://tijolada-virtual.blogspot.com/p/sitemap.html', 'title': 'Sitemap', 'position': 2}}]]></b:widget-setting>
-      <b:widget-setting name='homeTitle'>Página inicial</b:widget-setting>
+      <b:widget-setting name='showGraphicalCounter'>true</b:widget-setting>
+      <b:widget-setting name='showAnimatedCounter'>true</b:widget-setting>
+      <b:widget-setting name='showSparkline'>true</b:widget-setting>
+      <b:widget-setting name='sparklineStyle'>WHITE_TRANSPARENT</b:widget-setting>
+      <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
   <div class='widget-content'>
-    <b:if cond='data:mobile'>
-      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
-        <b:loop values='data:links' var='link'>
-          <option expr:value='data:link.href'>
-            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
-            <data:link.title/>
-          </option>
-        </b:loop>
-      </select>
-      <span class='pagelist-arrow'>&amp;#9660;</span>
-    <b:else/>
-      <ul>
-        <b:loop values='data:links' var='link'>
-          <li>
-            <b:class cond='data:link.isCurrentPage' name='selected'/>
-            <a expr:href='data:link.href'><data:link.title/></a>
-          </li>
-        </b:loop>
-      </ul>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='Label2' locked='false' title='Marcadores' type='Label'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>CLOUD</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'/>
-      <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <b:if cond='data:blog.url == data:label.url'>
-              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-            <b:else/>
-              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-            </b:if>
-            <b:if cond='data:showFreqNumbers'>
-              <span dir='ltr'>(<data:label.count/>)</span>
-            </b:if>
-          </li>
-        </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
+    <!-- Content is going to be visible when data will be fetched from server. -->
+    <div expr:id='data:widget.instanceId + &quot;_content&quot;' style='display: none;'>
+      <!-- Counter and image will be injected later via AJAX call. -->
+      <b:if cond='data:showSparkline'>
+        <script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'/>
+        <span expr:id='data:widget.instanceId + &quot;_sparklinespan&quot;' style='display:inline-block; width:75px; height:30px'/>
+      </b:if>
+      <span expr:class='&quot;counter-wrapper &quot; + (data:showGraphicalCounter ? &quot;graph-counter-wrapper&quot; : &quot;text-counter-wrapper&quot;)' expr:id='data:widget.instanceId + &quot;_totalCount&quot;'>
+      </span>
+      <b:include name='quickedit'/>
+    </div>
   </div>
 </b:includable>
   </b:widget>
