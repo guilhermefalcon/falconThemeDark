@@ -3,31 +3,24 @@
 <html b:version='3' lang='pt-br' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
   
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXXX-X'/>
+<!-- Global site tag -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X'/>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag(&#39;js&#39;, new Date());
 gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
 </script>
- 
   
-<!-- [ 
-Colors HEX:
-link-color: #ff9776;
-link-hover: #3ef5ff;    
-walter-white: #eaecee;
-background-black: #181a1b;
-] -->
-  
-  
+<!--  Roboto Font -->
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
 <!-- [ Color selector to mobile devices headers ] -->
 <meta content='#181a1b' name='theme-color'/>
 <meta content='#181a1b' name='msapplication-navbutton-color'/>
 <meta content='#181a1b' name='apple-mobile-web-app-status-bar-style'/>
-  
-  
+    
 <!-- [ some identifiers ] -->
 <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
 <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -35,8 +28,7 @@ background-black: #181a1b;
 <meta content='FALCON' name='Author'/>
 <meta content='general' name='rating'/>
 <meta content='id' name='geo.country'/>
-  
-  
+    
 <!-- [ Meta Tag SEO - facebook debugger proof/ready - beautiful thumbnails on embeed links] -->
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
 <meta content='blogger' name='generator'/>
@@ -123,17 +115,17 @@ background-black: #181a1b;
 ===============================
 ===============================
 FALCON TEMPLATE BLOGGER | v2.1
-tijolada.github.io/falconThemeDark
+github.com/tijolada
 ===============================
 ===============================
 ===============================
 */
 
 :root {
-  --link-color: #e9967a;
-  --link-hover: #b0f6a1;
-  --walter-white: #eaecee;
-  --background-black: #181a1b;
+--link-color: #e9967a;
+--link-hover: #b0f6a1;    
+--walter-white: #eaecee;
+--background-black: #181a1b;
 }
 
 ::-webkit-scrollbar {
@@ -164,7 +156,7 @@ tijolada.github.io/falconThemeDark
   background-color: blue;
 }
 
-html {
+html {font-family: &#39;Roboto&#39;, sans-serif;
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -177,34 +169,40 @@ button,html,input,select,textarea {
   font-family: sans-serif;
 }
 
-body {
+body  {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+    
+    
   background: radial-gradient(#242729,#181a1b);
+    
+    
   color: var(--walter-white);
   text-align: left;
   margin: 0;
-  font-family: &#39;
-  Open Sans&#39;, Arial, sans-serif;
-}
+font-family: &#39;Roboto&#39;, sans-serif;}
 
 a {
   text-decoration: none;
   font-weight: 600;
   color: var(--link-color);
-  padding: 1px;
-}
+padding: 1px;
+    }
 
 a:active {
-  color: var(--link-hover);
+    color: var(--link-hover);
   text-decoration: none;
+
 }
 
 a:hover {
-  background-color: transparent;
+background-color: transparent;
 }
 
+
+    
+    
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
   display: block;
 }
@@ -224,36 +222,32 @@ audio:not([controls]) {
   display: none;
 }
 
-h1 {
-  color: var(--walter-white);
-}
 
-h2 {
-  margin: 10px 0;
-}
-
-h3 {
-  margin: 1em 0;
-}
-
-h4 {
-  color: var(--walter-white);
-  font-size: 16px;
-  margin: 1.33em 0;
-}
-
-h5 {
-  color: var(--walter-white);
-  font-size: 14px;
-  margin: 1.67em 0;
-}
-
-h6 {
-  color: var(--walter-white);
-  font-size: .75em;
-  margin: 2.33em 0;
-}
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 abbr[title] {
   color: var(--walter-white);
 }
@@ -358,9 +352,10 @@ legend {
 }
 
 body {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
 }
+
 
 hr {
   display: block;
@@ -388,11 +383,10 @@ textarea {
   color: var(--walter-white);
 }
 
-.iframe {
+    .iframe {
   background: var(--background-black);
   color: var(--walter-white);
 }
-
 .clearfix:after,.clearfix:before {
   content: &quot;
   &quot;;display: table;
@@ -410,20 +404,37 @@ textarea {
   display: none!important;
 }
 
+    
+    
+    
+.titlewrapper {
+}
+
+.titlewrapper a {
+
+}
+
 .titlewrapper a:hover {
   color: var(--link-hover);
 }
-
+    
+    
+    
+    
 .Header h1 {
   color: var(--link-color);
   font-weight: 900;
-  margin: 25px 0 0;
-  font-size: 300%;
+  margin: auto;
+    margin-top: 20px;
+  font-size: 420%;
   text-transform: uppercase;
   background-color: transparent;
   text-align: center;
-  line-height: .9;
+  line-height: 1.0;
   width: 100%;
+      display: inline-block;
+  max-width: 100%;
+  font-family: &#39;Roboto&#39;, sans-serif;
 }
 
 .Header h1 a {
@@ -443,10 +454,14 @@ textarea {
   padding: 0 30px;
 }
 
+
+    
 .tabs-inner .section:first-child {
   border-top: 1px solid #aaa;
 }
 
+   
+    
 .tabs-inner .section:first-child ul {
   margin-top: -1px;
   border-top: 1px solid #aaa;
@@ -515,140 +530,229 @@ h3:hover {
 }
 
 .date-header {
-  width: 0px;
-  height: 0px;
+    width: 0px;
+    height: 0px;
   display: none;
-  visibility: hidden;
+      visibility:hidden;
 }
 
 .post {
+      text-align: left;
   margin: 0;
   padding: 0;
 }
 
 .post-title {
-  color: var(--walter-white);
-  background-color: transparent;
-  font-size: 40px;
+    color: var(--walter-white);
+background-color: transparent;
+    font-family: &#39;Roboto&#39;, sans-serif;font-weight: 900;
+
+  font-size: 43px;
+    padding: 0;
   margin: 0;
-  line-height: 1.0;
-  letter-spacing: -1px;
-  margin-top: -40px;
+  line-height: 1.1;
+  display: inline-block;
+    
 }
 
-.post-title:hover {
-  color: var(--walter-white);
+    .post-title:hover {
+    color: var(--walter-white);
 }
-
 .post-body {
-  z-index: 9999;
+  font-family: &#39;Roboto&#39;, sans-serif;font-weight: 300;
+  text-align: left;
+   z-index: 9999;
   width: 100%;
   background-color: transparent;
-  text-align: left;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: 0px;
   position: relative;
+    margin-top: 30px;
 }
 
 .post-body img {
   padding: 0;
-  margin-top: 2px;
-  margin-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: transparent;
   max-width: 100%;
   width: 100%;
   height: auto;
   vertical-align: middle;
   float: center;
+    border: solid 1px var(--background-black);
 }
+   
+.post-body h1 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+font-family: &#39;Roboto&#39;, sans-serif;}
 
+.post-body h2 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 38px;
+font-family: &#39;Roboto&#39;, sans-serif;}
+
+.post-body h3 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 36px;
+font-family: &#39;Roboto&#39;, sans-serif;}
+
+.post-body h4 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 34px;
+font-family: &#39;Roboto&#39;, sans-serif;}
+
+.post-body h5 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 32px;
+font-family: &#39;Roboto&#39;, sans-serif;}
+
+.post-body h6 {
+    line-height: 1.2;
+    background-color: transparent;
+  text-transform: capitalize;
+  color: var(--link-color);
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+font-family: &#39;Roboto&#39;, sans-serif;}
+    
+      
+    
 .post-header {
-  margin: 0 0 1.5em;
-  line-height: 0;
-  font-size: 90%;
-  background-color: #ff0;
+    display: none;
 }
 
 .post-footer {
-  margin: 20px -2px 0;
+    text-align: left;
+  font-family: &#39;Roboto&#39;, sans-serif;
+  margin: 20px -2px 20px 0px;
   line-height: 1.2;
   font-size: 18px;
   background-color: var(--background-black);
   color: var(--walter-white);
   padding: 6px;
+
 }
 
-.post-footer a {
-  text-transform: capitalize;
-}
-
-.post-footer a:hover {
+    .post-footer a {text-align: left;
+    font-family: &#39;Roboto&#39;, sans-serif;
+text-transform: capitalize;
+    }
+    
+    
+    
+    .post-footer a:hover {
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-}
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
     
     
     }
-
+    
+    
+    
+    
+    
+    
 .section-columns td.columns-cell {
   border-left: 1px solid #181a1b;
 }
 
+    
+    
 #Image1 img {
-  line-height: 0;
-  display: block;
-  max-width: 100%;
+    line-height: 0;
+    display: block;
+   max-width: 100%;
   height: auto;
-  margin: 0;
-  margin-top: -50px;
+    margin: 0;
+    margin-top: -50px;
 }
+    
+    
 
-#Image2 img {
-  display: block;
-  line-height: 0;
-  max-width: 100%;
+    
+ #Image2 img {display: block;line-height: 0;
+   max-width: 100%;
   height: auto;
-  margin: 0;
-  margin-top: -50px;
+    margin: 0;margin-top: -50px;
 }
+    
+    
 
-#Image3 img {
-  display: block;
-  line-height: 0;
-  max-width: 100%;
+    
+    #Image3 img {display: block;line-height: 0;
+   max-width: 100%;
   height: auto;
-  margin: 0;
-  margin-top: -50px;
+    margin: 0;margin-top: -50px;
 }
+    
+    
 
-#Image4 img {
-  display: block;
-  line-height: 0;
-  max-width: 100%;
+    #Image4 img {display: block;line-height: 0;
+   max-width: 100%;
   height: auto;
-  margin: 0;
-  margin-top: -43px;
+    margin: 0;margin-top: -43px;
 }
+    
+    
 
-#Image5 img {
-  display: block;
-  line-height: 0;
-  max-width: 100%;
+    
+    #Image5 img {display: block;line-height: 0;
+   max-width: 100%;
   height: auto;
-  margin: 0;
-  margin-top: -40px;
+    margin: 0;margin-top: -40px;
 }
+    
+    
+
+    
 
 #b-navbar,#navbar {
   display: none;
 }
 
-.header-inner .Header .titlewrapper {
-}
 
+    
+    
+    
+    
 .container {
   margin: 0 auto;
   max-width: 1100px;
@@ -656,10 +760,12 @@ h3:hover {
   padding: 0 0 10px;
 }
 
-img.icon-action {
-  width: auto;
-}
 
+
+    img.icon-action {
+    width: auto;
+    }
+    
 .section {
   margin: 0 15px;
 }
@@ -745,6 +851,17 @@ footer {
   margin-top: -50px;
 }
 
+    #Label1 h1, #Label1 h2, #Label1 h3, #Label1 h4, #Label1 h5, #Label1 h6 {
+  text-transform: capitalize;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
+    margin-bottom: 10px;
+}
+
+
+    
 #Label1 a {
   padding: 5px 7px;
   margin: 0 5px 5px 0;
@@ -772,34 +889,51 @@ footer {
 
 #Label1 a:hover {
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
 }
-}
+    
+    
+#Label2 {  text-transform: uppercase;
 
-#Label2 {
-  text-transform: uppercase;
   margin: 0px 0px 0px 0px;
   padding: 0;
   line-height: 20px;
   font-size: 18px;
+
 }
 
+    #Label2 h1, #Label2 h2, #Label2 h3, #Label2 h4, #Label2 h5, #Label2 h6 {
+  text-transform: capitalize;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
+    margin-top: 30px;
+}
+
+
+    
+    
 #Label2 p,#Label2 span {
-  line-height: 1.5;
-  display: block;
+line-height: 1.5;  display: block;
   float: left;
   color: var(--link-hover);
   background-color: transparent;
   font-size: 18px;
   text-align: justify;
+
   text-transform: uppercase;
   word-break: break-all;
-  padding-right: 3px;
+    padding-right: 3px;
 }
-
+    
+    
 #Label2 a {
+
+    font-family: &#39;Roboto&#39;, sans-serif;
   display: block;
   float: left;
   color: var(--link-color);
@@ -807,19 +941,22 @@ footer {
   font-size: 16px;
   text-align: left;
   text-transform: capitalize;
-  padding: 2px 5px 2px 5px;
-  margin: 0px 5px 5px 0px;
+    padding: 2px 5px 2px 5px;
+    margin: 0px 5px 5px 0px;
   text-transform: uppercase;
 }
 
+
 #Label2 a:hover {
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-}
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
 }
 
+
+    
 #HTML3 {
   background-color: var(--background-black);
   width: 100%;
@@ -853,11 +990,12 @@ footer {
   width: auto;
   float: left;
   margin-top: -20px;
-  margin-bottom: -50px;
+    margin-bottom: -50px;
 }
 
 #HTML5 {
-  z-index: 9999;
+          z-index: 9999;
+
   width: 100%;
   height: auto;
   margin: 0;
@@ -866,20 +1004,28 @@ footer {
   width: auto;
   float: left;
   margin-top: -20px;
-  word-wrap: break-word;
-  text-align: justify;
+      word-wrap: break-word;
+    text-align: justify;
 }
 
-#HTML5 a {
-  display: block;
-  text-align: justify;
-  padding: 5px;
-  display: inline-block;
-}
+    
+    #HTML5 a{
+    display: block;
+    text-align: justify;
+    padding: 5px;
+    
+    display: inline-block;
+    }
+    
+     
+    #HTML5 a:hover{
+    
 
-#HTML5 a:hover {
-}
-
+    }
+    
+    
+  
+    
 #PageList1 {
   background-color: transparent;
   width: 100%;
@@ -889,7 +1035,7 @@ footer {
 }
 
 #PageList1 li {
-  padding: 3px;
+    padding: 3px;
   display: inline-block;
   background-color: transparent;
   font-size: 14px;
@@ -900,18 +1046,22 @@ footer {
 }
 
 #PageList1 a {
-  padding: 5px;
+      padding: 5px;
+
   color: var(--walter-white);
   font-weight: 900;
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
-#PageList1 a:hover {
-  background-color: var(--link-hover);
-  color: var(--background-black);
-  opacity: 1.0;
-}
+    #PageList1 a:hover {
+background-color: var(--link-hover);
+    color: var(--background-black);
+        opacity: 1.0;
 
+    }
+    
+    
+    
 #PageList1 h1 {
   display: none;
 }
@@ -939,23 +1089,60 @@ footer {
   float: left;
   text-align: left;
   margin-bottom: 40px;
-  z-index: 9999;
-  text-decoration: uppercase;
+  z-index: 9999;    text-decoration: uppercase;
+
+
 }
 
+    
+    #BlogArchive1 h1, #BlogArchive1 h2, #BlogArchive1 h3, #BlogArchive1 h4, #BlogArchive1 h5, #BlogArchive1 h6 {
+  text-transform: capitalize;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
+}
+
+
 #BlogArchive1 a {
-  padding: 3px;
+    font-family: &#39;Roboto&#39;, sans-serif;
+  padding-left: 3px;
   background-color: var(--background-black);
   text-decoration: uppercase;
 }
 
 #BlogArchive1 a:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
+ 
+     color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
+    #Stats1 {
+    font-family: &#39;Roboto&#39;, sans-serif;font-weight: 500;
+font-size: 22px;
+    }
+    
+    #Stats1 h1, #Stats1 h2, #Stats1 h3, #Stats1 h4, #Stats1 h5, #Stats1 h6 {
+  text-transform: capitalize;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
 }
 
+
+    
+#PopularPosts1 h1, #PopularPosts1 h2, #PopularPosts1 h3, #PopularPosts1 h4, #PopularPosts1 h5, #PopularPosts1 h6 {
+  text-transform: capitalize;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
+}
+
+
+    
 #PopularPosts1 ul li a {
   box-sizing: border-box;
   display: block;
@@ -965,139 +1152,133 @@ footer {
   padding: 8px;
   text-transform: capitalize;
   font-size: 16px;
+    font-family: &#39;Roboto&#39;, sans-serif;
 }
 
 #PopularPosts1 ul li:nth-child(6n+1) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
   background-color: #ff9999;
-  border: solid 2px var(--background-black);
+    border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+2) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ff9e99;
-  border: solid 2px var(--background-black);
+  background-color: #ff9e99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+3) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ffb399;
-  border: solid 2px var(--background-black);
+  background-color: #ffb399;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+4) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ffcc99;
-  border: solid 2px var(--background-black);
+  background-color: #ffcc99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+5) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ffe699;
-  border: solid 2px var(--background-black);
+  background-color: #ffe699;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+6) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ffff99;
-  border: solid 2px var(--background-black);
+  background-color: #ffff99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+7) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #e6ff99;
-  border: solid 2px var(--background-black);
+  background-color: #e6ff99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+8) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #ccff99;
-  border: solid 2px var(--background-black);
+  background-color: #ccff99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+9) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #b3ff99;
-  border: solid 2px var(--background-black);
+  background-color: #b3ff99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+10) a {
+    font-family: &#39;Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #99ff99;
-  border: solid 2px var(--background-black);
+  background-color: #99ff99;border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+1) a:hover {
   color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+2) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+3) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+4) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+5) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+6) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+7) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+8) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+9) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 #PopularPosts1 ul li:nth-child(6n+10) a:hover {
-  color: var(--walter-white);
-  background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
 
 .relpost {
+    font-family: &#39;Roboto&#39;, sans-serif;
   line-height: 2.0;
   width: 100%;
   background-color: transparent;
@@ -1106,29 +1287,31 @@ footer {
 }
 
 .relpost a {
-  border: solid 2px var(--blackground-black);
+    font-family: &#39;Roboto&#39;, sans-serif;font-weight: 700;
+font-size: 24px;
+    border: solid 2px var(--blackground-black);
   background-color: var(--background-black);
   width: 100%;
   line-height: 1.3;
   display: inline-block;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   text-align: left;
   text-transform: capitalize;
   padding: 2px 1px 2px 1px;
-  margin-bottom: 9px;
-  padding-left: 9px;
+    margin-bottom: 9px;    padding-left: 9px;
+
 }
 
 .relpost a:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-}
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
  
 }
 
-.youtube-ifttt {
+    .youtube-ifttt {
   position: relative;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -1137,7 +1320,8 @@ footer {
   max-width: 10000px;
   display: block;
 }
-
+    
+    
 .youtube-ifttt img {
   display: block;
   float: left;
@@ -1148,17 +1332,20 @@ footer {
   display: none;
 }
 
+
+
 .youtube-ifttt embed,.youtube-ifttt iframe,.youtube-ifttt media,.youtube-ifttt object,.youtube-ifttt video {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 609px;
+  min-height: 500px;
   max-height: 1080px;
   height: auto;
   vertical-align: bottom;
   float: left;
-  margin-bottom: 30px;
+        margin-bottom: 30px;
+
 }
 
 .youtube-ifttt a {
@@ -1178,9 +1365,9 @@ footer {
   text-transform: uppercase;
   text-align: center;
 }
-
-.ad-post img {
-  padding: 0;
+    
+    .ad-post img {
+      padding: 0;
   margin-top: 2px;
   margin-bottom: 3px;
   background-color: transparent;
@@ -1189,7 +1376,7 @@ footer {
   height: auto;
   vertical-align: middle;
   float: center;
-}
+    }
 
 .ad-post a,.ad-post p {
   color: red;
@@ -1208,9 +1395,9 @@ footer {
   line-height: 0.9;
   letter-spacing: -1px;
 }
-
 .marcador a {
-  color: var(--walter-white);
+    color: var(--walter-white);
+
 }
 
 #BlogSearch1 {
@@ -1221,17 +1408,18 @@ footer {
   background-color: transparent;
   margin-top: -10px;
 }
-
 .marcadora {
   margin-left: 0px;
   color: var(--walter-white);
   ;
 }
 
-.titulopost {
-  list-style-type: square;
-}
+    .titulopost {
+      list-style-type: square;
 
+    
+    }
+    
 .titulopost span, .titulopost p,.titulopost a {
   list-style-type: square;
   border: solid 2px var(--background-black);
@@ -1243,62 +1431,73 @@ footer {
   padding: 5px;
   word-wrap: break-word;
   margin-bottom: 8px;
+  
 }
 
 .titulopost span:hover, .titulopost p:hover,.titulopost a:hover {
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        }
 }
-}
-
+  
 .find-me-twitch a, .find-me-psn a, .find-me-youtube a, .find-me-steam a {
-  color: var(--link-color);
-  background-color: transparent;
-}
+  color: var(--link-color);    background-color: transparent;
 
-.find-me {
-  margin-top: 30px;
-  margin-bottom: 1px;
+ 
 }
+    
+    .find-me {
+    margin-top: 30px;
+    margin-bottom: 1px;
+    
+    }
+    
 
 .find-me-twitch img, .find-me-psn img, .find-me-youtube img, .find-me-steam img {
-  background-color: var(--link-color);
-  border: 0px solid black;
+  background-color: var(--link-color); border: 0px solid black;
   width: 100%;
   height: auto;
   display: block;
 }
-
+    
 .find-me-twitch img:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+	  color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
-
 .find-me-psn img:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+	  color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
-
-.find-me-youtube img:hover {
+.find-me-youtube img:hover{
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
-
 .find-me-steam img:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
+	  color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
 }
-
+    
+    
+        h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: var(--walter-white);
+  padding: 0;
+  font-size: 28px;
+  font-family: &#39;Roboto&#39;, sans-serif;
+}
+    
+    
+    
 .fix-calendar {
   white-space: pre;
   margin-left: 20px;
@@ -1332,10 +1531,8 @@ footer {
 }
 
 #Feed1 a:hover {
-  text-decoration: underline;
-  ;
-color: var(--link-hover);
-  line-height: 1;
+  text-decoration: underline;;
+color: var(--link-hover);  line-height: 1;
   width: 100%;
   list-style-type: square;
   padding: 3px;
@@ -1559,17 +1756,17 @@ color: var(--link-hover);
   max-height: 100%;
   display: inline;
 }
-
-#widget-content a, .widget-content a {
+    
+     #widget-content a, .widget-content a{
+    
 }
-
-#widget-content a:hover, .widget-content a:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-}
-
+    #widget-content a:hover, .widget-content a:hover{
+     color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+    }
+    
 @media only screen and (min-width:35em) {
   .section {
     margin: 0 35px;
@@ -1630,20 +1827,25 @@ color: var(--link-hover);
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
 
-  100% {
-    background-position: 0% 50%;
-  }
+
+
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
-    </style>
+    
+
+
+        </style>
 
 
 <script type='text/javascript'>
@@ -1705,6 +1907,19 @@ function printRelatedLabels() {
 //]]>
 </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- PRO TECHNIFY Grid Style Start-->
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
@@ -1761,7 +1976,6 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   padding: auto;
   padding-top: 7px;
   height: auto;
-  font-size: 0px;
   margin: 0px;
   color: transparent;
 }
@@ -1783,6 +1997,10 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 .mobile .post-body {
   height: auto;
 }
+
+
+
+
 
 /*--- Paginacao numerada inicio --- */
 
@@ -1807,38 +2025,51 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   background-color: var(--background-black);
   background-position: bottom;
   border: 1px solid var(--background-black);
-  font-size: 22px;
+  font-size: 22px;    font-family: &#39;Roboto&#39;, sans-serif;font-weight: 900;
+
 }
 
 #blog-pager a:hover, .pagenavi a:hover {
-  color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-  border: 1px solid var(--background-black);
+    color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+  border: 1px solid var(--background-black);    font-family: &#39;Roboto&#39;, sans-serif;font-weight: 900;
+
+
 }
 
 #blog-pager-older-link, #blog-pager-newer-link {
-  float: none;
+  
 }
 
 .pagenavi .current {
-  background: var(--link-color);
-  color: var(--background-black);
-  font-weight: bold;
-}
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+  border: 1px solid var(--background-black);
+      font-family: &#39;Roboto&#39;, sans-serif;font-weight: 900;
+
+} 
 
 #blog-posts {
   z-index: 9999;
-}
+  }
+  
+  
   
 </style>
 </b:if>
 </b:if>
 <!-- Grid Style End -->
 
+  
+  
+
     </head>
     <body>
+      
       
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -2015,23 +2246,24 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   line-height: 42px;
   border-width: 0;
   background-color: var(--link-color);
+
  /*--define a cor do botão Buscar--*/
+
   -webkit-border-radius: 0px 3px 3px 0px;
   -moz-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
   cursor: pointer;
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: 1px dotted #000;
+  border-top: 1px solid var(--background-black);
+  border-right: 1px solid var(--background-black);
+  border-bottom: 1px solid var(--background-black);
+  border-left: 1px solid var(--background-black);
 }
 
 #search-button:hover {
   color: var(--background-black);
-  background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-  background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
-}
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;}
 
 &lt;/style&gt;
 &lt;div id=&quot;search-box&quot;&gt;
@@ -2102,7 +2334,10 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
           &lt;div class=&quot;date-posts&quot;&gt;
         </b:if>
         <div class='post-outer'>
-   
+          
+          
+          
+          
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='titulopost'><a expr:href='data:post.url'>
@@ -2113,6 +2348,13 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 <b:else/>
 <b:include data='post' name='post'/>
 </b:if>
+
+
+
+
+
+
+
 
           <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
         </div>
@@ -2132,7 +2374,11 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
     <!-- navigation -->
    <b:if cond='data:blog.pageType == &quot;index&quot;'><b:include name='page-navi'/><b:else/><b:if cond='data:blog.pageType == &quot;archive&quot;'><b:include name='page-navi'/></b:if><b:else/><b:if cond='data:blog.pageType == &quot;item&quot;'><b:include name='nextprev'/></b:if></b:if>
 
+
+
   <div class='clear'/>
+
+
 
     <!-- feed links -->
     <br/>
@@ -2259,6 +2505,9 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
       <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
         
+        
+        
+        
        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
           <b:loop values='data:post.comments' var='comment'>
             <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
@@ -2382,6 +2631,12 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   </b:if>
 </b:includable>
                     <b:includable id='mobile-index-post' var='post'>
+
+
+
+
+
+
 
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
@@ -2583,7 +2838,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
                       
   <div class='clear'/>
 </b:includable>
-                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 8,firstText: &quot;Primeira&quot;,lastText: &quot;Última&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://tijolada.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
+                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 5,firstText: &quot;Primeira&quot;,lastText: &quot;&#10548;&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://tijolada.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
                     <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
@@ -2770,7 +3025,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
     <h2>🌏 Compartilhe esse post:</h2>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX' type='text/javascript'/>
+<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
 
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -2859,17 +3114,28 @@ background: linear-gradient(-25deg, #ccff33, #dcff46, #ffe933, #edff58, #feff69,
 padding: 20px;
 
 }
+
+
+
 </style><center>
 <form action='/search' id='searchthis' method='get' style='display: inline;'>
 <input id='pesquisafsm-caixa' name='q' placeholder='O que está procurando?' size='40' type='text'/> <input id='pesquisafsm-botao' type='submit' value='🔎 Pesquisar'/> </form></center>
 
    </b:if>
    
+   
+   
 </div>
   </b:if>
 </b:includable>
                     <b:includable id='threaded-comment-form' var='post'>
- <div class='comment-form'>
+
+
+
+
+
+
+  <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
       <p><data:blogCommentMessage/></p>
@@ -3174,7 +3440,7 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
             </macro:include>
 
             <b:section class='foot' id='footer-3' showaddelement='no'>
-              <b:widget id='HTML2' locked='false' title='' type='HTML'>
+              <b:widget id='HTML2' locked='true' title='' type='HTML'>
                 <b:widget-settings>
                   <b:widget-setting name='content'>&lt;style&gt;
 .body-footer {
@@ -3184,6 +3450,7 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
     height:auto;
     line-height: 1.0;
     background-color: var(--background-black);
+    padding: 5px;
 }
 .body-footer p{
     color: var(--walter-white);
@@ -3201,7 +3468,7 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
 
 
 &lt;center&gt;&lt;div class=&quot;body-footer&quot;&gt;
-    &lt;p&gt;Created and Developed with &#9749; by &lt;a href=&quot;https://github.com/tijolada&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;Falcon&lt;/a&gt; and open-source theme released in &lt;a href=&quot;https://tijolada.github.io/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;falconThemeDark&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Developed with &#9749; by &lt;a href=&quot;https://github.com/tijolada&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;Falcon&lt;/a&gt;&lt;br/&gt;open-source theme released in &lt;a href=&quot;https://tijolada.github.io/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;hr/&gt;
 &lt;/center&gt;</b:widget-setting>
                 </b:widget-settings>
@@ -3221,10 +3488,22 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
             </footer>
         </div>
 
-	    <!-- SHARE BUTTONS ADD-THIS MOBILE BOTTOM -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX' type='text/javascript'/>
+ 
 
-     <macro:includable id='sections' var='col'>
+
+
+
+<!-- SHARE BUTTONS ADD-THIS MOBILE BOTTOM -->
+<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
+
+
+
+      
+    
+  
+
+
+    <macro:includable id='sections' var='col'>
         <macro:if cond='data:col.num == 0'>
         <macro:else/>
             <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
@@ -3333,7 +3612,8 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
       <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
-       
+      
+  
   <b:if cond='data:title != &quot;&quot;'>
     <h2><data:title/></h2>
   </b:if>
@@ -3385,7 +3665,8 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
     </b:widget-settings>
     <b:includable id='main'>
       
-        <b:if cond='data:title != &quot;&quot;'>
+      
+  <b:if cond='data:title != &quot;&quot;'>
     <h2><data:title/></h2>
   </b:if>
   <div class='widget-content'>
