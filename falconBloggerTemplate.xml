@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html b:version='3' lang='pt-br' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-  
+
+<!-- REPLACE XXXXXXXXX-X WITH YOUR USER IDs -->
+	
 <!-- Global site tag -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X'/>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag(&#39;js&#39;, new Date());
-gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
+gtag(&#39;config&#39;, &#39;UA-177386674-1&#39;);
 </script>
   
 <!--  Roboto Font -->
@@ -2838,7 +2840,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
                       
   <div class='clear'/>
 </b:includable>
-                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 5,firstText: &quot;Primeira&quot;,lastText: &quot;&#10548;&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://tijolada.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
+                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 5,firstText: &quot;Primeira&quot;,lastText: &quot;&#10548;&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://gsfalcon.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
                     <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
@@ -3468,7 +3470,7 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
 
 
 &lt;center&gt;&lt;div class=&quot;body-footer&quot;&gt;
-    &lt;p&gt;developed with &#9749; by &lt;a href=&quot;https://github.com/tijolada&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;open source blogger theme on &lt;a href=&quot;https://tijolada.github.io/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;developed with &#9749; by &lt;a href=&quot;https://github.com/gsfalcon&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;open source on &lt;a href=&quot;https://gsfalcon.github.io/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;hr/&gt;
 &lt;/center&gt;</b:widget-setting>
                 </b:widget-settings>
