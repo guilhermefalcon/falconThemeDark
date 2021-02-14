@@ -3383,7 +3383,7 @@ padding: 20px;
                     </b:widget-settings>
                     <b:includable id='main'>
 <script type='text/javascript'>
-var disqus_shortname = &#39;tijolada&#39;;
+var disqus_shortname = &#39;XXXXXXXXX-X&#39;;
 var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
 if (!disqus_blogger_current_url.length) {
 disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
