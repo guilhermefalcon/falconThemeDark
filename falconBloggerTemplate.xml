@@ -2,16 +2,14 @@
 <!DOCTYPE html>
 <html b:version='3' lang='pt-br' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-
-<!-- REPLACE XXXXXXXXX-X WITH YOUR USER IDs -->
-	
+  
 <!-- Global site tag -->
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X'/>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag(&#39;js&#39;, new Date());
-gtag(&#39;config&#39;, &#39;UA-177386674-1&#39;);
+gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
 </script>
   
 <!--  Roboto Font -->
@@ -45,7 +43,7 @@ gtag(&#39;config&#39;, &#39;UA-177386674-1&#39;);
 <title><data:blog.pageName/> &#9642;&#9642;&#9642; <data:blog.title/></title>
 </b:if></b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-<title>ERRO 404 - Página não encontrada | <data:blog.title/></title>
+<title>💀 ERRO 404 💀</title>
 </b:if>
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <meta content='noindex' name='robots'/>
@@ -227,10 +225,20 @@ audio:not([controls]) {
 
     
     
+    ::selection {
+    background: var(--link-color);
+    color: var(--walter-white);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--link-color);
+    color: var(--walter-white);
+    text-shadow: none;
+}
     
     
-    
-    
+
     
     
     
@@ -549,11 +557,12 @@ h3:hover {
 background-color: transparent;
     font-family: &#39;Roboto&#39;, sans-serif;font-weight: 900;
 
-  font-size: 43px;
+  font-size: 40px;
     padding: 0;
   margin: 0;
   line-height: 1.1;
   display: inline-block;
+    margin-bottom: 50px;
     
 }
 
@@ -566,11 +575,11 @@ background-color: transparent;
    z-index: 9999;
   width: 100%;
   background-color: transparent;
-  font-size: 22px;
-  line-height: 1.4;
-  letter-spacing: 0px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: normal;
   position: relative;
-    margin-top: 30px;
+    margin-top: -30px;
 }
 
 .post-body img {
@@ -678,8 +687,8 @@ text-transform: capitalize;
     
     
     .post-footer a:hover {
-  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+    color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
         animation: gradient 3s ease infinite;
         }
@@ -890,12 +899,14 @@ footer {
 }
 
 #Label1 a:hover {
-  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
         animation: gradient 3s ease infinite;
         }
 }
+    
+    
     
     
 #Label2 {  text-transform: uppercase;
@@ -950,14 +961,18 @@ line-height: 1.5;  display: block;
 
 
 #Label2 a:hover {
-  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
         animation: gradient 3s ease infinite;
         }
 }
 
+    
+    
 
+    
+    
     
 #HTML3 {
   background-color: var(--background-black);
@@ -1114,9 +1129,8 @@ background-color: var(--link-hover);
 }
 
 #BlogArchive1 a:hover {
- 
-     color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+    color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
         animation: gradient 3s ease infinite;
         }
@@ -1306,7 +1320,7 @@ font-size: 24px;
 
 .relpost a:hover {
    color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
         animation: gradient 3s ease infinite;
         }
@@ -1351,6 +1365,16 @@ font-size: 24px;
 }
 
 .youtube-ifttt a {
+    display: inline-block;
+        font-family: &#39;Roboto&#39;, sans-serif;
+  padding: 3px;
+  background-color: var(--background-black);
+}
+    .youtube-ifttt a:hover {
+       color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
 }
 
 .youtube-ifttt p {
@@ -1359,6 +1383,12 @@ font-size: 24px;
   padding: 0;
 }
 
+
+    
+    
+    
+    
+    
 .ad-post {
   display: inline-block;
   width: 100%;
@@ -1444,6 +1474,9 @@ font-size: 24px;
         }
 }
   
+    
+ 
+    
 .find-me-twitch a, .find-me-psn a, .find-me-youtube a, .find-me-steam a {
   color: var(--link-color);    background-color: transparent;
 
@@ -1465,28 +1498,28 @@ font-size: 24px;
 }
     
 .find-me-twitch img:hover {
-	  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
+        animation: gradient 3s ease infinite;
 }
 .find-me-psn img:hover {
-	  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
+        animation: gradient 3s ease infinite;
 }
 .find-me-youtube img:hover{
-  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
+        animation: gradient 3s ease infinite;
 }
 .find-me-steam img:hover {
-	  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
+        animation: gradient 3s ease infinite;
 }
     
     
@@ -1497,6 +1530,55 @@ font-size: 24px;
   font-size: 28px;
   font-family: &#39;Roboto&#39;, sans-serif;
 }
+    
+    
+    .div404 {
+    text-align: justify;
+    display:block;
+    margin-top: -30px;
+    background: rgba(24,26,27,0.5);
+    padding: 15px;
+    border: 2px solid #181a1b;
+    }
+    
+    .div404 h1{
+  color: var(--walter-white);
+  font-weight: 900;
+  margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  font-size: 200%;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  line-height: 1.0;
+  width: 100%;
+      display: inline-block;
+  max-width: 100%;
+  font-family: &#39;Roboto&#39;, sans-serif;
+    }
+    
+    .div404 a {
+    color: var(--link-color);
+background-color: var(--background-black);    
+    text-decoration: none;
+    }
+    .div404 a:hover {
+    
+        color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1532,8 +1614,13 @@ font-size: 24px;
   margin-bottom: 6px;
 }
 
+    
+
+    
+    
+    
 #Feed1 a:hover {
-  text-decoration: underline;;
+  text-decoration: none;
 color: var(--link-hover);  line-height: 1;
   width: 100%;
   list-style-type: square;
@@ -1758,6 +1845,90 @@ color: var(--link-hover);  line-height: 1;
   max-height: 100%;
   display: inline;
 }
+    
+    
+    
+    
+    
+    
+           .sitemap-tip {
+    margin: 0;
+    padding: 0;
+     max-width: 100%;
+  font-family: &#39;Roboto&#39;, sans-serif;
+line-height: 1.5;
+  border: solid 2px var(--background-black);
+    background-color: var(--background-black);
+    padding-left: 5px;
+    margin-bottom: -50px;
+    }
+    .sitemap-tip b{
+    color: var(--link-color);
+    }
+       
+    .sitemap-tip:hover {  border: solid 2px var(--background-black);
+opacity: 0.7;
+    }
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+        .sitemap-links {
+      list-style-type: decimal;
+
+    
+    }
+    
+    .sitemap-links p, .sitemap-links h4 {
+    color: var(--walter-white);
+    }
+    
+.sitemap-links a {
+    font-size: 18px;
+  list-style-type: decimal;
+  border: solid 2px var(--background-black);
+  width: 100%;
+    line-height: 1.0;
+  display: block;
+  color: var(--link-color);
+  background-color: var(--background-black);
+  padding: 5px;
+  word-wrap: break-word;
+  margin-bottom: -2px;
+  
+}
+
+.sitemap-links a:hover {
+  color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
      #widget-content a, .widget-content a{
     
@@ -2197,34 +2368,30 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   </div>
 </b:includable>
                   </b:widget>
-                </b:section>
-            </header>
-
-
-            <div class='left_rail'>
-                <b:section class='main' id='main' showaddelement='no'>
-                  <b:widget id='HTML1' locked='false' title='' type='HTML'>
+                  <b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='content'>&lt;style&gt;
 #search-box {
+
   position: relative;
   width: 100%;
   margin: 0;
+  margin-bottom: 40px;
 }
+
 
 #search-form {
   height: 40px;
   border: 1px solid #000;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  color: green;
+
   background-color: var(--background-black);
   overflow: hidden;
 }
 
 #search-text {
   font-size: 18px;
-  color: #f4a460;
+  color: red;
   border-width: 0;
   background: transparent;
 }
@@ -2232,7 +2399,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 #search-box input[type=&quot;text&quot;] {
   width: 90%;
   padding: 11px 0 12px 1em;
-  color: #f4a460;
+  color: var(--link-color);
   outline: none;
 }
 
@@ -2251,32 +2418,35 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
  /*--define a cor do botão Buscar--*/
 
-  -webkit-border-radius: 0px 3px 3px 0px;
-  -moz-border-radius: 0px 3px 3px 0px;
-  border-radius: 0px 3px 3px 0px;
-  cursor: pointer;
-  border-top: 1px solid var(--background-black);
-  border-right: 1px solid var(--background-black);
-  border-bottom: 1px solid var(--background-black);
-  border-left: 1px solid var(--background-black);
+
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
-#search-button:hover {
-  color: var(--background-black);
-        background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+#search-button:hover {cursor: pointer;
+
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
         background-size: 400% 400%;
-        animation: gradient 3s ease infinite;}
+        animation: gradient 3s ease infinite;
+}
 
 &lt;/style&gt;
 &lt;div id=&quot;search-box&quot;&gt;
   &lt;form action=&quot;/search&quot; id=&quot;search-form&quot; method=&quot;get&quot; target=&quot;_top&quot;&gt;
-    &lt;input id=&quot;search-text&quot; name=&quot;q&quot; placeholder=&quot;O que você procura ?&quot; type=&quot;text&quot; /&gt;
-    &lt;button id=&quot;search-button&quot; type=&quot;submit&quot;&gt;&lt;span&gt;Buscar&lt;/span&gt;&lt;/button&gt;
+    &lt;input id=&quot;search-text&quot; name=&quot;q&quot; placeholder=&quot;🔎 what are you looking for ?&quot; type=&quot;text&quot; /&gt;
+    &lt;button id=&quot;search-button&quot; type=&quot;submit&quot;&gt;&lt;span&gt;Go!&lt;/span&gt;&lt;/button&gt;
   &lt;/form&gt;&lt;/div&gt;</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
+                      
+                      
   <b:if cond='data:title != &quot;&quot;'>
+    
+    
     <h2 class='title'><data:title/></h2>
   </b:if>
   <div class='widget-content'>
@@ -2286,6 +2456,12 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   <b:include name='quickedit'/>
 </b:includable>
                   </b:widget>
+                </b:section>
+            </header>
+
+
+            <div class='left_rail'>
+                <b:section class='main' id='main' showaddelement='no'>
                   <b:widget id='Blog1' locked='true' title='Postagens do blog' type='Blog' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='commentLabel'>Comentários</b:widget-setting>
@@ -3024,7 +3200,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 
-    <h2>🌏 Compartilhe esse post:</h2>
+    <h2>🌏 Share:</h2>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
@@ -3040,7 +3216,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
 
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'><h2>💡 Você pode querer ver isso:</h2></b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'><h2>💡 Related Posts:</h2></b:if>
 <script type='text/javascript'>
 removeRelatedDuplicates();
 printRelatedLabels();
@@ -3076,56 +3252,20 @@ printRelatedLabels();
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 
 
-   <div class='marcador'>📂 <span class='marcadora'><data:blog.pageName/></span></div>
+   <div class='marcador'>📂 <span class='marcadora'><data:blog.pageName/></span></div><hr/>
    </b:if></b:if>
    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-     <hr/>
-<center>💀 ERRO 404 - Página não encontrada 💀</center><br/>
+     <style>.marcador {display: none;}</style>
+ <div class='div404'>    
+   <center><h1>💀ERRO:404💀</h1>
 <br/>
-
-<div class='div404'>A página que você está procurando não está mais aqui, ela pode ter sido <b>excluída</b>, <b>movida</b> ou <b>ocultada</b>.<br/>
+A página que você está procurando não está mais aqui. Ela pode ter sido <b>excluída</b>, <b>movida</b> ou <b>ocultada</b>.<br/>
 <br/>
-Por favor, tente pesquisar novamente utilizando outras palavras na caixa de Pesquisa abaixo:<br/><br/>
-</div>
-
-
-<style type='text/css'>
-#pesquisafsm-caixa {
-background: #f5f5f5; padding:9px; border:0 none; width:400px;
-}
-#pesquisafsm-botao {
-border: 0px solid #222;
-color: var(--walter-white);
-background-color: #263238;
-margin-left: -5px;
-font: &#39;trebuchet ms&#39;, trebuchet;
-padding:8px;
-border:0 none;
-font-weight:bold;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
-}
-#pesquisafsm-botao:hover {
-cursor: pointer;
-color: var(--background-black);
-background: linear-gradient(-25deg, #ccff33, #dcff46, #ffe933, #edff58, #feff69, #a7d02f, #84a22a);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-}
-#div404 {
-padding: 20px;
-
-}
-
-
-
-</style><center>
-<form action='/search' id='searchthis' method='get' style='display: inline;'>
-<input id='pesquisafsm-caixa' name='q' placeholder='O que está procurando?' size='40' type='text'/> <input id='pesquisafsm-botao' type='submit' value='🔎 Pesquisar'/> </form></center>
-
-   </b:if>
-   
-   
+Por favor, tente pesquisar novamente utilizando outras palavras na caixa de pesquisa acima.<br/><br/>Ou acesse o<a href='https://www.tijolada.com/p/sitemap.html'>sitemap</a> para pesquisar manualmente todos os links do site.</center></div>
+     
+     
+     
+      </b:if>
    
 </div>
   </b:if>
@@ -3461,16 +3601,16 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
     color: var(--link-color);
 }
 .body-footer a:hover {
-    color: var(--background-black);
-    background: linear-gradient(135.8deg,rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
-    background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
 }
 &lt;/style&gt;
 
 
 &lt;center&gt;&lt;div class=&quot;body-footer&quot;&gt;
-    &lt;p&gt;developed with &#9749; by &lt;a href=&quot;https://github.com/gsfalcon&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;open source on &lt;a href=&quot;https://gsfalcon.github.io/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;developed with &#9749; by &lt;a href=&quot;https://github.com/gsfalcon&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;open source on &lt;a href=&quot;https://github.com/gsFALCON/falconThemeDark&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;hr/&gt;
 &lt;/center&gt;</b:widget-setting>
                 </b:widget-settings>
