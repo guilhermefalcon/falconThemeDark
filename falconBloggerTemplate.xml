@@ -4,12 +4,12 @@
 <head>
   
 <!-- Global site tag -->
-<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X'/>
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxx-x'/>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag(&#39;js&#39;, new Date());
-gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
+gtag(&#39;config&#39;, &#39;UA-xxxxxxxxx-x&#39;);
 </script>
   
 <!--  Roboto Font -->
@@ -123,7 +123,7 @@ It is necessary to disable the Blogger mobile theme for this own mobile theme to
 ===============================
 ===============================
 FALCON TEMPLATE BLOGGER | v2.1
-github.com/gsFALCON
+github.com/tijolada
 ===============================
 ===============================
 ===============================
@@ -1307,6 +1307,56 @@ font-size: 22px;
   animation: gradient 0.2s ease infinite;
 }
    
+    
+    
+    
+    
+   
+#recent_comments {
+    padding: 0;
+    margin: 0;
+    max-height: 2000px; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: transparent;
+}
+#recent_comments li {
+    padding: 10px 0;
+    background-color: transparent;
+}
+#recent_comments li a.recencmtitle {
+    color: var(--link-color); 
+    display: block;
+    margin: 0 auto 10px auto;
+    background-color: transparent;
+    
+#recent_comments li a.recencmtitle: hover {
+    color: var(--background-color)
+    }
+}
+#recent_comments li .recencmbody {
+    background: pink; 
+    color: var(--walter-white); 
+    display: block;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    line-height: normal;
+    background-color: var(--background-black);
+}
+
+#recent_comments li:nth-child(odd) .recencmbody {
+    background: #f48fb1; 
+    color: var(--walter-white);
+    background-color: var(--background-black);
+}
+
+
+    
+    
+    
+    
+    
+    
 .relpost {
   font-family: &#39;Roboto&#39;, sans-serif;
   line-height: 2.0;
@@ -3228,7 +3278,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
     <h2>🌏 COMPARTILHE:</h2>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
+<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-xxxxxxxxx-x' type='text/javascript'/>
 
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -3257,7 +3307,7 @@ printRelatedLabels();
                       
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <hr/>
-  <h2 class='h2comments'>💬 Comentários:</h2>
+  <h2 class='h2comments'>💬 SISTEMA DE COMENTÁRIOS:</h2>
  </b:if>
 </b:includable>
                     <b:includable id='postQuickEdit' var='post'>
@@ -3779,6 +3829,36 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
     </b:if>
     <b:include name='quickedit'/>
   </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML3' locked='false' title='💬 NOVOS COMENTÁRIOS' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;script type=&#39;text/javascript&#39;&gt;
+//CONFIGURAÇÕES DO WIDGET
+var numComments  = 3;
+var characters  = 180;
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+//&lt;![CDATA[
+//SCRIPT COMENTÁRIOS RECENTES- NÃO ALTERE
+var numComments=numComments||15,characters=characters||80;function recent_comments(tb){var commentsHtml;commentsHtml=&#39;&lt;ul id=&quot;recent_comments&quot;&gt;&#39;;for(var i=0;i&lt;numComments;i++){var commentlink,authorName;if(i==tb.feed.entry.length)break;commentsHtml+=&quot;&lt;li&gt;&quot;;var entry=tb.feed.entry[i];for(var l=0;l&lt;entry.link.length;l++){if(entry.link[l].rel==&#39;alternate&#39;){commentlink=entry.link[l].href}}for(var a=0;a&lt;entry.author.length;a++){authorName=entry.author[a].name.$t}commentsHtml+=&quot;&lt;a class=&#39;recencmtitle&#39; href=\&quot;&quot;+commentlink+&quot;\&quot; title=\&quot;&quot;+authorName+&quot;\&quot;&gt;&quot;+authorName+&quot;&lt;/a&gt;&quot;;var commHTML=entry.content.$t;var commBody=commHTML.replace(/(&lt;([^&gt;]+)&gt;)/ig,&quot;&quot;);if(commBody!=&quot;&quot;&amp;&amp;commBody.length&gt;characters){commBody=commBody.substring(0,characters);commBody+=&quot; &amp;hellip;&quot;}else{commBody=commBody}commentsHtml+=&quot; &quot;;commentsHtml+=&quot;&lt;span class=&#39;recencmbody&#39;&gt;&quot;+commBody+&quot;&lt;/span&gt;&quot;;commentsHtml+=&quot;&lt;/li&gt;&quot;}commentsHtml+=&#39;&lt;/ul&gt;&#39;;document.write(commentsHtml)}
+//]]&gt;
+&lt;/script&gt;
+
+&lt;script type=&#39;text/javascript&#39;&gt;
+document.write(&quot;&lt;script src=\&quot;/feeds/comments/default?alt=json&amp;callback=recent_comments\&quot;&gt;&lt;\/script&gt;&quot;);
+&lt;/script&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='📅 ARQUIVO' type='BlogArchive' version='1'>
