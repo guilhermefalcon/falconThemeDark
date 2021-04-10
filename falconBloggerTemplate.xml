@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='3' lang='pt-br' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
   
 <!-- Global site tag -->
@@ -71,6 +71,7 @@ gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
 </b:if></b:if>
 <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
 <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+  
 <!-- [ Meta Tag social networks facebook, opengraph, twitter... beauty thumbnails on blogger ] -->
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <meta expr:content='data:blog.pageName' property='og:title'/>
@@ -94,7 +95,9 @@ gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
 <b:if cond='data:blog.postImageThumbnailUrl'>
 <meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
 <b:else/>
-<meta content='https://www.placecage.com/gif/200/300' property='og:image'/>
+  
+     <!-- [ thumbnail image ] -->
+<meta content='https://www.placecage.com/gif/1920/1080' property='og:image'/>
 </b:if>
 </b:if>
   <meta content='pt_BR' property='og:locale'/>
@@ -107,25 +110,30 @@ gtag(&#39;config&#39;, &#39;UA-XXXXXXXXX-X&#39;);
   <meta content='1920' property='og:image:width'/> 
   <meta content='1080' property='og:image:height'/> 
     <!-- [ CSS STYLE - DARK ] -->
-  <b:skin><![CDATA[
-]]></b:skin>
-  <style type='text/css'>
+      <!-- [ 
+ 
+It is necessary to disable the Blogger mobile theme for this own mobile theme to works.
+
+
+] -->
+
+    <style type='text/css'>
 /*  
 ===============================
 ===============================
 ===============================
 FALCON TEMPLATE BLOGGER | v2.1
-github.com/tijolada
+github.com/gsFALCON
 ===============================
 ===============================
 ===============================
 */
 
 :root {
---link-color: #e9967a;
---link-hover: #b0f6a1;    
---walter-white: #eaecee;
---background-black: #181a1b;
+  --link-color: #e9967a;
+  --link-hover: #b0f6a1;
+  --walter-white: #eaecee;
+  --background-black: #181a1b;
 }
 
 ::-webkit-scrollbar {
@@ -156,7 +164,47 @@ github.com/tijolada
   background-color: blue;
 }
 
-html {font-family: &#39;Roboto&#39;, sans-serif;
+@font-face {
+  font-family: &#39;Roboto&#39;, sans-serif;
+  font-display: swap;
+}     
+     
+  </style>
+   <b:skin><![CDATA[
+
+/* CUSTOM COMMENTS BOX FOR BLOGGER ====================
+<Group description="New Comment Required – Dont edit">
+ <Variable name="body.background" description="Body Background" type="background" color="#181a1b" default="#181a1b none repeat scroll top left"  value="#000 none repeat scroll top left"/>
+ <Variable name="body.font" description="Font" type="font" default="normal normal 20px Roboto, sans-serif"  value="normal normal 20px Roboto"/>
+ <Variable name="body.text.color" description="Text Color" type="color" default="#eaecee"  value="#eaecee"/>
+ <Variable name="body.text.font" description="2" type="font" default="$(body.font)"  value="normal normal 20px Arial, sans serif"/>
+ <Variable name="posts.background.color" description="6" type="color" default="#e9967a"  value="#181a1b"/>
+ <Variable name="body.link.color" description="7" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="body.link.visited.color" description="8" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="body.link.hover.color" description="9" type="color" default="$(body.link.color)"  value="#ffa015"/>
+ <Variable name="blog.title.font" description="10" type="font" default="$(robotoBold45)"  value="$(robotoBold45)"/>
+ <Variable name="blog.title.color" description="11" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="header.icons.color" description="12" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="tabs.font" description="13" type="font" family="$(body.font.family)" size="$(body.font.size)" default="700 normal $(size) $(family)"  value="700 normal $(size) $(family)"/>
+ <Variable name="tabs.color" description="14" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="tabs.selected.color" description="15" type="color" default="#e9967a"  value="#181a1b"/>
+ <Variable name="tabs.overflow.background.color" description="16" type="color" default="#eaecee"  value="#eaecee"/>
+ <Variable name="tabs.overflow.color" description="17" type="color" default="$(posts.text.color)"  value="#e9967a"/>
+ <Variable name="tabs.overflow.selected.color" description="18" type="color" default="#eaecee"  value="#eaecee"/>
+ <Variable name="posts.title.color" description="19" type="color" default="#eaecee"  value="#eaecee"/>
+ <Variable name="posts.title.font" description="20" type="font" default="$(robotoBold22)"  value="$(robotoBold22)"/>
+ <Variable name="posts.text.font" description="21" type="font" default="$(body.text.font)"  value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+ <Variable name="posts.text.color" description="22" type="color" default="$(body.text.color)"  value="#222222"/>
+ <Variable name="posts.icons.color" description="23" type="color" default="#e9967a"  value="#e9967a"/>
+ <Variable name="labels.background.color" description="24" type="color" default="$(sidebar.backgroundColorTopHD)"  value="$(sidebar.backgroundColorTopHD)"/>
+</Group>
+*/
+
+]]></b:skin>
+  <style type='text/css'>
+
+html {
+    font-family: &#39;Roboto&#39;, sans-serif;
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -227,13 +275,13 @@ audio:not([controls]) {
     
     ::selection {
     background: var(--link-color);
-    color: var(--walter-white);
+    color: var(--background-black);
     text-shadow: none;
 }
 
 ::-moz-selection {
     background: var(--link-color);
-    color: var(--walter-white);
+    color: var(--background-black);
     text-shadow: none;
 }
     
@@ -396,6 +444,7 @@ textarea {
     .iframe {
   background: var(--background-black);
   color: var(--walter-white);
+    
 }
 .clearfix:after,.clearfix:before {
   content: &quot;
@@ -566,6 +615,9 @@ background-color: transparent;
     
 }
 
+   
+    
+    
     .post-title:hover {
     color: var(--walter-white);
 }
@@ -975,17 +1027,11 @@ line-height: 1.5;  display: block;
     
     
 #HTML3 {
-  background-color: var(--background-black);
-  width: 100%;
-  height: auto;
-  color: var(--walter-white);
-  display: block;
-  padding: 7px;
-  margin: 2px;
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 16px;
+display: block;
+    margin: 0;
+    padding: 0;
 }
+
 
 #HTML1 p {
   display: inline;
@@ -1001,15 +1047,22 @@ line-height: 1.5;  display: block;
   text-decoration: none;
 }
 
-#HTML4 {
-  padding: 0;
-  height: auto;
-  width: auto;
-  float: left;
-  margin-top: -20px;
-    margin-bottom: -50px;
-}
+    #HTML4 {
+    
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: visible;
+  height: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+  display: block;
+        margin: 0;
+    padding: 0;
+           
+    }
 
+    
 #HTML5 {
           z-index: 9999;
 
@@ -1154,11 +1207,10 @@ font-size: 22px;
   color: var(--walter-white);
   padding: 0;
   font-size: 28px;
-  font-family: &#39;Roboto&#39;, sans-serif;
+  font-family: &#39;
+  Roboto&#39;, sans-serif;
 }
 
-
-    
 #PopularPosts1 ul li a {
   box-sizing: border-box;
   display: block;
@@ -1167,136 +1219,98 @@ font-size: 22px;
   margin-bottom: -25px;
   padding: 8px;
   text-transform: capitalize;
-  font-size: 16px;
-    font-family: &#39;Roboto&#39;, sans-serif;
+  font-size: 100%;
+  font-family: &#39;
+  Roboto&#39;, sans-serif;
+  color: var(--walter-white);
 }
-
+    
 #PopularPosts1 ul li:nth-child(6n+1) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
+    color: var(--background-black);
   background-color: #ff9999;
-    border: solid 2px var(--background-black);
 }
 
 #PopularPosts1 ul li:nth-child(6n+2) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ff9e99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ff9e99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+3) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ffb399;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ffb399;
 }
 
 #PopularPosts1 ul li:nth-child(6n+4) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ffcc99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ffcc99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+5) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ffe699;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ffe699;
 }
 
 #PopularPosts1 ul li:nth-child(6n+6) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ffff99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ffff99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+7) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #e6ff99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #e6ff99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+8) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #ccff99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #ccff99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+9) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
-  color: var(--background-black);
-  background-color: #b3ff99;border: solid 2px var(--background-black);
+    color: var(--background-black);
+  background-color: #b3ff99;
 }
 
 #PopularPosts1 ul li:nth-child(6n+10) a {
-    font-family: &#39;Roboto&#39;, sans-serif;
+    color: var(--background-black);
+  background-color: #99ff99;
+}
+    
+#PopularPosts1 ul li:nth-child(6n+1) a, 
+#PopularPosts1 ul li:nth-child(6n+2) a, 
+#PopularPosts1 ul li:nth-child(6n+3) a, 
+#PopularPosts1 ul li:nth-child(6n+4) a, 
+#PopularPosts1 ul li:nth-child(6n+5) a, 
+#PopularPosts1 ul li:nth-child(6n+6) a, 
+#PopularPosts1 ul li:nth-child(6n+7) a, 
+#PopularPosts1 ul li:nth-child(6n+8) a, 
+#PopularPosts1 ul li:nth-child(6n+9) a, 
+#PopularPosts1 ul li:nth-child(6n+10) a {
+  font-family: &#39;
+  Roboto&#39;, sans-serif;
   color: var(--background-black);
-  background-color: #99ff99;border: solid 2px var(--background-black);
+  border: solid 2px var(--background-black);
 }
-
-#PopularPosts1 ul li:nth-child(6n+1) a:hover {
-  color: var(--walter-white);
-        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+2) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+3) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+4) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+5) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+6) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a );
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+7) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+8) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
-#PopularPosts1 ul li:nth-child(6n+9) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
-}
-
+    
+#PopularPosts1 ul li:nth-child(6n+1) a:hover,
+#PopularPosts1 ul li:nth-child(6n+2) a:hover,
+#PopularPosts1 ul li:nth-child(6n+3) a:hover,
+#PopularPosts1 ul li:nth-child(6n+4) a:hover,
+#PopularPosts1 ul li:nth-child(6n+5) a:hover,
+#PopularPosts1 ul li:nth-child(6n+6) a:hover,
+#PopularPosts1 ul li:nth-child(6n+7) a:hover,
+#PopularPosts1 ul li:nth-child(6n+8) a:hover,
+#PopularPosts1 ul li:nth-child(6n+9) a:hover,
 #PopularPosts1 ul li:nth-child(6n+10) a:hover {
-color: var(--walter-white);        background: linear-gradient(135.8deg,#181a1b, #212425, #2a2e30, #34383a);
-        background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
+  color: var(--walter-white);
+  background: linear-gradient(135.8deg,var(--background-black), #212425, #2a2e30, #34383a);
+  background-size: 200% 200%;
+  animation: gradient 0.2s ease infinite;
 }
-
+   
 .relpost {
-    font-family: &#39;Roboto&#39;, sans-serif;
+  font-family: &#39;Roboto&#39;, sans-serif;
   line-height: 2.0;
-  width: 100%;
+  width: 95%;
   background-color: transparent;
   color: var(--link-color);
   list-style-type: none;
@@ -1314,7 +1328,7 @@ font-size: 24px;
   text-align: left;
   text-transform: capitalize;
   padding: 2px 1px 2px 1px;
-    margin-bottom: 9px;    padding-left: 9px;
+    margin-bottom: 9px;    padding-left: 9px;padding-right: 9px;padding-top: 3px;padding-bottom: 3px;
 
 }
 
@@ -1333,7 +1347,8 @@ font-size: 24px;
   padding-top: 5px;
   overflow: visible;
   height: 100%;
-  max-width: 10000px;
+  max-width: 1920px;
+  max-height: 1080px;
   display: block;
 }
     
@@ -1354,9 +1369,9 @@ font-size: 24px;
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 500px;
-  max-height: 1080px;
+  width: 100%;  max-height: 1080px;
+
+  min-height: 555px;
   height: auto;
   vertical-align: bottom;
   float: left;
@@ -1631,16 +1646,14 @@ color: var(--link-hover);  line-height: 1;
 }
 
 #comments h4, #comments .comment-author a, #comments .comment-timestamp a {
-  color: var(--link-color);
-  background-color: var(--background-black);
-  text-align: left;
-  padding: 5px;
-  font-size: 24px;
+visibility: hidden;
 }
 
 #comments {
+    font-family: &#39;Roboto&#39;, sans-serif;
   background: transparent;
   padding: 0px;
+    
 }
 
 .comments .comment-block {
@@ -1650,7 +1663,7 @@ color: var(--link-hover);  line-height: 1;
 .comment-header {
   background: var(--background-black);
   border: 0px solid #E9F0FC;
-  padding-top: 0px;
+  padding-top: 2px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 6px;
@@ -1658,7 +1671,7 @@ color: var(--link-hover);  line-height: 1;
 }
 
 .comment-header a {
-  color: var(--link-color) !important;
+  color: var(--link-color);
   background-color: transparent;
   font-size: 16px;
   line-height: 16px;
@@ -1667,9 +1680,8 @@ color: var(--link-hover);  line-height: 1;
 }
 
 .comment-header span {
-  font-family: &#39;
-  Open Sans&#39;;
-  width: 100%;
+ font-family: &#39;Roboto&#39;, sans-serif;
+  width: 94%;
   height: auto;
   font-size: 18px;
   line-height: 18px;
@@ -1688,28 +1700,33 @@ color: var(--link-hover);  line-height: 1;
 }
 
 .comment-header a:hover {
-  color: sienna;
+     color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
   text-decoration: none;
   margin: 0;
 }
 
 .comments .comments-content .datetime a {
-  font-size: 12px !important;
-  line-height: 16px;
+    width: 94%;
+  font-size: 16px !important;
+  line-height: 18px;
 }
 
 .comments .comments-content .comment-content {
+  font-family: &#39;Roboto&#39;, sans-serif;
   margin-top: -10px;
   position: relative;
   background-color: rgba(24, 26, 27, 0.5);
-  ;border-top: 1px solid #111;
+  border-top: 1px solid #111;
   padding: 10px;
   color: var(--walter-white);
   font-size: 18px;
   text-align: left;
   letter-spacing: 0px;
   line-height: 1.2;
-  width: 99%;
+  width: 94%;
   height: auto;
 }
 
@@ -1718,7 +1735,7 @@ color: var(--link-hover);  line-height: 1;
   max-height: 50px;
   min-height: 50px;
   min-width: 50px;
-  background-image: url(&quot;https://1.bp.blogspot.com/-MpLcKDwa5Sc/Xl2n0TMsIJI/AAAAAAAAhgI/iDM-1415vkcKS8PgXIqEW1BL7xsCloX9QCLcBGAsYHQ/s1600/ixumanu%255B1%255D.gif&quot;);
+  background-image: url(&quot;https://raw.githubusercontent.com/gsFALCON/falconThemeDark/master/anon-comment-avatar.gif&quot;);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1742,7 +1759,7 @@ color: var(--link-hover);  line-height: 1;
 .comments .comment .comment-actions a {
   padding: 5px;
   background: var(--background-black);
-  color: var(--link-color) !important;
+  color: var(--link-color) ;
   font-weight: normal;
   margin-right: 10px;
   margin-top: -10px;
@@ -1750,8 +1767,10 @@ color: var(--link-hover);  line-height: 1;
 }
 
 .comments .comment .comment-actions a:hover {
-  background-color: rgba(24, 26, 27, 0.5);
-  color: var(--background-black);
+   color: var(--background-black);
+        background: linear-gradient(135.8deg,rgba(223,244,148,1) 0%, rgba(128,248,174,1) 90% );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
   text-decoration: none;
 }
 
@@ -1826,8 +1845,34 @@ color: var(--link-hover);  line-height: 1;
 }
 
 #comment-editor {
-  height: 250px !important;
+
+    height: 333px !important;
+        width: 93% !important;
+border: 15px #181a1b solid;
+
+    display: block;
+  overflow: hidden;
+
 }
+
+
+    
+    .h2comments, .h2comments p, .h2comments span {
+    background-color: transparent;
+    display: inline-block;
+margin-bottom: 0px;   }
+        
+    .comment-form {
+   vertical-align: top;
+       vertical-align: text-top;
+    margin-top: -10px;
+
+}
+    
+    .comments {
+    margin-top: -70px;
+    }
+    
 
 .CSS_LAYOUT_COMPONENT {
   color: rgba(0,0,0,0) !important;
@@ -1918,13 +1963,7 @@ opacity: 0.7;
     
     
     
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
@@ -2410,15 +2449,11 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
   height: 42px;
   width: 80px;
   font-size: 19px;
-  color: #000;
+  color: var(--link-color);
   text-align: center;
   line-height: 42px;
   border-width: 0;
-  background-color: var(--link-color);
-
- /*--define a cor do botão Buscar--*/
-
-
+  background-color: #111;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -2434,10 +2469,10 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 }
 
 &lt;/style&gt;
-&lt;div id=&quot;search-box&quot;&gt;
+&lt;div id=&quot;search-box&quot; translate=&quot;no&quot;&gt;
   &lt;form action=&quot;/search&quot; id=&quot;search-form&quot; method=&quot;get&quot; target=&quot;_top&quot;&gt;
-    &lt;input id=&quot;search-text&quot; name=&quot;q&quot; placeholder=&quot;🔎 what are you looking for ?&quot; type=&quot;text&quot; /&gt;
-    &lt;button id=&quot;search-button&quot; type=&quot;submit&quot;&gt;&lt;span&gt;Go!&lt;/span&gt;&lt;/button&gt;
+    &lt;input id=&quot;search-text&quot; name=&quot;q&quot; placeholder=&quot;O que você procura?&quot; type=&quot;text&quot; /&gt;
+    &lt;button id=&quot;search-button&quot; translate=&quot;no&quot; type=&quot;submit&quot;&gt;&lt;span&gt;🔍&lt;/span&gt;&lt;/button&gt;
   &lt;/form&gt;&lt;/div&gt;</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
@@ -2470,7 +2505,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
                       <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='timestampLabel'>@</b:widget-setting>
-                      <b:widget-setting name='reactionsLabel'>O que você achou?:</b:widget-setting>
+                      <b:widget-setting name='reactionsLabel'/>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                       <b:widget-setting name='showLocation'>false</b:widget-setting>
@@ -2608,13 +2643,13 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
         <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
       <p><data:blogCommentMessage/></p>
       <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/>
       <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='96%'/>
     <b:else/>
-      <h4 id='comment-post-message'><data:postCommentMsg/></h4>
+      <h4 id='comment-post-message'/>
       <p><data:blogCommentMessage/></p>
       <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/>
       <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
     </b:if>
     <data:post.cmtfpIframe/>
@@ -3016,7 +3051,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
                       
   <div class='clear'/>
 </b:includable>
-                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 10,numPages: 5,firstText: &quot;Primeira&quot;,lastText: &quot;&#10548;&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://gsfalcon.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
+                    <b:includable id='page-navi'><div class='pagenavi'><script type='text/javascript'> var pageNaviConf ={perPage: 35,numPages: 5,firstText: &quot;Primeira&quot;,lastText: &quot;&#10548;&quot;,nextText: &quot;&#187;&quot;,prevText: &quot;&#171;&quot;}</script><script src='https://gsfalcon.github.io/falconThemeDark/paginacao-numerada.js' type='text/javascript'/> <div class='clear'/></div></b:includable>
                     <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
@@ -3058,16 +3093,6 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
 
 
-    <b:if cond='data:blog.pageType == &quot;item&quot;'><br/>
-
-
-    <div class='ad-post'>
-
-      <center><a href='https://www.tijolada.com/p/sitemap.html'><img src='https://i.imgur.com/8aqfWw6.gif'/></a></center>
-
-    </div>
-
-</b:if>
 
 
 
@@ -3158,7 +3183,7 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=6&quot;' type='text/javascript'/>
+<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=10&quot;' type='text/javascript'/>
 </b:if>
 
 
@@ -3196,11 +3221,11 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
     </div>
 
     </b:if>
-
+    
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-
-    <h2>🌏 Share:</h2>
+<center><hr/></center>
+    <h2>🌏 COMPARTILHE:</h2>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
@@ -3208,29 +3233,32 @@ function removeHtmlTag(strx,chop){if(strx.indexOf("<")!=-1){var s=strx.split("<"
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class='addthis_inline_share_toolbox_luxi'/>
-  <center><hr/></center>
+  
             
 </b:if>
 
+    <center><hr/></center>
+
+       
 
 
 
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'><h2>💡 Related Posts:</h2></b:if>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+ <h2>💡 Você pode querer ver isso:</h2></b:if>
 <script type='text/javascript'>
 removeRelatedDuplicates();
 printRelatedLabels();
 </script>
-
-
-
   </div>
-
-
+                      
+                      
+                      
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <hr/>
-
-</b:if>
+  <h2 class='h2comments'>💬 Comentários:</h2>
+ </b:if>
 </b:includable>
                     <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
@@ -3251,30 +3279,22 @@ printRelatedLabels();
 <b:if cond='data:blog.homepageUrl != data:blog.url'> 
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 
-
    <div class='marcador'>📂 <span class='marcadora'><data:blog.pageName/></span></div><hr/>
    </b:if></b:if>
    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
      <style>.marcador {display: none;}</style>
- <div class='div404'>    
+ <div class='div404' translate='yes'>    
    <center><h1>💀ERRO:404💀</h1>
 <br/>
 A página que você está procurando não está mais aqui. Ela pode ter sido <b>excluída</b>, <b>movida</b> ou <b>ocultada</b>.<br/>
 <br/>
 Por favor, tente pesquisar novamente utilizando outras palavras na caixa de pesquisa acima.<br/><br/>Ou acesse o<a href='https://www.tijolada.com/p/sitemap.html'>sitemap</a> para pesquisar manualmente todos os links do site.</center></div>
      
-     
-     
       </b:if>
-   
-</div>
+   </div>
   </b:if>
 </b:includable>
                     <b:includable id='threaded-comment-form' var='post'>
-
-
-
-
 
 
   <div class='comment-form'>
@@ -3282,12 +3302,12 @@ Por favor, tente pesquisar novamente utilizando outras palavras na caixa de pesq
     <b:if cond='data:mobile'>
       <p><data:blogCommentMessage/></p>
       <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/>
       <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='96%'/>
     <b:else/>
       <p><data:blogCommentMessage/></p>
       <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/>
       <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='96%'/>
     </b:if>
     <data:post.cmtfpIframe/>
@@ -3517,48 +3537,6 @@ Por favor, tente pesquisar novamente utilizando outras palavras na caixa de pesq
   </div>
 </b:includable>
                   </b:widget>
-                  <b:widget id='HTML4' locked='false' title='Disqus for tijolada' type='HTML'>
-                    <b:widget-settings>
-                      <b:widget-setting name='content'><![CDATA[<!-- Disqus Widget -->]]></b:widget-setting>
-                    </b:widget-settings>
-                    <b:includable id='main'>
-<script type='text/javascript'>
-var disqus_shortname = &#39;XXXXXXXXX-X&#39;;
-var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
-if (!disqus_blogger_current_url.length) {
-disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
-}
-var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
-var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
-</script>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<style type='text/css'>
-#comments {display:none;}
-</style>
-<script type='text/javascript'>
-(function() {
-    var bloggerjs = document.createElement(&#39;script&#39;);
-    bloggerjs.type = &#39;text/javascript&#39;;
-    bloggerjs.async = true;
-    bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_item.js&#39;;
-    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
-})();
-</script>
-</b:if>
-<style type='text/css'>
-.post-comment-link { visibility: hidden; }
-</style>
-<script type='text/javascript'>
-(function() {
-var bloggerjs = document.createElement(&#39;script&#39;);
-bloggerjs.type = &#39;text/javascript&#39;;
-bloggerjs.async = true;
-bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index.js&#39;;
-(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
-})();
-</script>
-</b:includable>
-                  </b:widget>
                 </b:section>
             </div>
 
@@ -3610,7 +3588,7 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
 
 
 &lt;center&gt;&lt;div class=&quot;body-footer&quot;&gt;
-    &lt;p&gt;developed with &#9749; by &lt;a href=&quot;https://github.com/gsfalcon&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;open source on &lt;a href=&quot;https://github.com/gsFALCON/falconThemeDark&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Desenvolvido com &#9749; por &lt;a href=&quot;https://github.com/gsfalcon&quot; title=&quot;Author GitHub Profile&quot; target=&quot;_blank&quot;&gt;FaLcoN&lt;/a&gt;&lt;br/&gt;código fonte em &lt;a href=&quot;https://github.com/gsFALCON/falconThemeDark/&quot; title=&quot;Theme Download Page&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;hr/&gt;
 &lt;/center&gt;</b:widget-setting>
                 </b:widget-settings>
@@ -3631,18 +3609,6 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
         </div>
 
  
-
-
-
-
-<!-- SHARE BUTTONS ADD-THIS MOBILE BOTTOM -->
-<script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-XXXXXXXXX-X' type='text/javascript'/>
-
-
-
-      
-    
-  
 
 
     <macro:includable id='sections' var='col'>
@@ -3697,7 +3663,29 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
       
       </body>
       <b:section-contents id='sidebar-right-1'>
-  <b:widget id='PopularPosts1' locked='false' title='🔥 POPULAR POSTS' type='PopularPosts'>
+  <b:widget id='HTML4' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<center><iframe src="https://tunein.com/embed/player/s85089/?autoplay=true" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe></center>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:blog.url == &quot;https://www.tijolada.com/p/tijolada.html&quot;'>
+
+
+
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+          </b:if>
+
+</b:includable>
+  </b:widget>
+  <b:widget id='PopularPosts1' locked='false' title='🔥 TOP 10 + ACESSADOS' type='PopularPosts'>
     <b:widget-settings>
       <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
       <b:widget-setting name='showThumbnails'>false</b:widget-setting>
@@ -3745,11 +3733,11 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label2' locked='false' title='🔖 TAGS' type='Label' version='1'>
+  <b:widget id='Label2' locked='false' title='🔖 TRENDING TOPICS' type='Label' version='1'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
       <b:widget-setting name='display'>CLOUD</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'>.iso,100%,2021,2160p,4K,60 fps,Anal,Chillwave,Ciência de Verdade,Cortes Podcast,Cross-Over,Drogas,Entrevistas,Experiências,Fim dos Tempos,First Time Watching,Humor,Imagens,LIVEs,Liked,Macho Tóxico,Maconha,Memes,Mundial,Músicas,Nova Ordem Mundial,PS1,PS4,PS5,Platina,Pânico,Reactions,Retrowave,Reviews,Stand Up,Teorias da Conspiração,Terra Plana,Tutoriais,Video Game,Videos,YouTube,futebol,gameplay,manipulação,pc,playthrough,retro,tecnologia</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'><![CDATA[100%,2021,2160p,4K,5G,60 fps,Ameaças,Anal,BBB,Better Call Saul,Bola,Borderline,Bullying,Cancelamentos,Ciência de Verdade,Click Bait,Comunismo,Conspiração,Cortes Podcast,Drogas,Entrevistas,Farsa,First Time Watching,Globo,Heterosexual,Homem,Humor,Illuminatti,Inglês,Japão,LIVEs,Liked,Lua,Lógica,MGTOW,Macho Tóxico,Maconha,Marte,Massacration,Memes,MultiPlayer,Mundial,Musculação,Músicas,NASA,NOM,NWO,Nova Ordem Mundial,Ocultismo,PREPARE-SE 1,PREPARE-SE 2,PS1,PS4,PS5,PSN,Passado,Platina,Problema,Pânico,Reactions,Reparo,Retrospectiva,Retrowave,Reviews,Rock n' Roll,Sexo,Sociopata,SpaceX,Stand Up,Stargate,Suplementação,Séries,Teorias da Conspiração,Terra Plana,Testemunhos,Testosterona,Tutoriais,Video Game,Videos,Virgem,YouTube,apostas,brasil,futebol,gameplay,gatos,longplay,manipulação,mundo,patch,pc,playthrough,retro,tecnologia,windows]]></b:widget-setting>
       <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
       <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
     </b:widget-settings>
@@ -3793,7 +3781,7 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='💼 ARCHIVE' type='BlogArchive' version='1'>
+  <b:widget id='BlogArchive1' locked='false' title='📅 ARQUIVO' type='BlogArchive' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
       <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
@@ -3801,7 +3789,7 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
       <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
       <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
       <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-      <b:widget-setting name='chronological'>true</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
       <b:widget-setting name='showPosts'>false</b:widget-setting>
       <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
     </b:widget-settings>
@@ -3875,7 +3863,7 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
   </a>
 </b:includable>
   </b:widget>
-  <b:widget id='Stats1' locked='false' title='🌎 PAGE VIEWS' type='Stats' version='1'>
+  <b:widget id='Stats1' locked='false' title='🌎 VISUALIZAÇÕES' type='Stats' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showGraphicalCounter'>true</b:widget-setting>
       <b:widget-setting name='showAnimatedCounter'>true</b:widget-setting>
@@ -3899,60 +3887,6 @@ var nanobar = new Nanobar();nanobar.go(30);nanobar.go(60);nanobar.go(100);
       <b:include name='quickedit'/>
     </div>
   </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='HTML5' locked='false' title='' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div class=&quot;find-me&quot;&gt;&lt;table&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;
-
-&lt;div class=&quot;find-me-twitch&quot;&gt; &lt;a href=&quot;https://www.twitch.tv/guilhermefalcon&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/SQz5BNm.png&quot; alt=&quot;Twitch Channel&quot; /&gt;
-&lt;/a&gt;&lt;/div&gt;
-
-&lt;/td&gt;
-&lt;td&gt;
-
-&lt;div class=&quot;find-me-youtube&quot;&gt;
-&lt;a href=&quot;https://www.youtube.com/channel/UC1GL0q0PDcuIh7Gu3yxaqMw&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/n11IaDW.png&quot; alt=&quot;YouTube Channel&quot; /&gt;
-&lt;/a&gt;&lt;/div&gt;
-
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-
-&lt;div class=&quot;find-me-steam&quot;&gt;&lt;a href=&quot;https://steamcommunity.com/profiles/76561198001840453&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/GbNO8M0.png&quot; alt=&quot;Steam Profile&quot; /&gt;
-&lt;/a&gt;&lt;/div&gt;
-
-&lt;/td&gt;
-&lt;td&gt;
-
-&lt;div class=&quot;find-me-psn&quot;&gt;&lt;a href=&quot;https://psnprofiles.com/gsFALCON&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/DiW1oSR.png&quot; alt=&quot;PlayStation Profile&quot; /&gt;
-&lt;/a&gt;&lt;/div&gt;
-
-
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
