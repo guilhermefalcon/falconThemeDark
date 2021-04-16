@@ -1,12 +1,3 @@
-/*
-
- * Awesome Blogger Page Navigation by Onlinetrick *
- * Rev 248 on May 7, 2010 *
- * Source at http://code.google.com/p/rilwis/source/browse/trunk/blogger *
-
-*/
-
-
 function pageNavi(o){
 	var m=location.href,
 		l=m.indexOf("/search/label/")!=-1,
